@@ -19,6 +19,32 @@
   color: white;
 }
 
+div.vis-content {
+  top: 0px !important;
+}
+
+div.vis-item.INFO {
+  background-color: green;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-size: 0.7em;
+}
+
+div.vis-item.WARN {
+  background-color: yellow;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-size: 0.7em;
+
+}
+
+div.vis-item.ERROR {
+  background-color: red;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-size: 0.7em;
+}
+
 .App-link {
   color: #61dafb;
 }
