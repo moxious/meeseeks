@@ -10,7 +10,7 @@ A quick tool for extracting useful stuff out of multiple debug.log files from Ne
 
 ```
 yarn install
-node index.js /path/to/files
+node index.js logs/gke-onprem-healthy-4gb-json-load/
 ```
 
 # WTF does this do right now?
@@ -23,6 +23,13 @@ is marked up with the identity of the member it belongs to.
 
 Right now, this just gets dumped as a huge marked up JSON file.  Later it would be loaded into Neo4j,
 or other filtering tools built on top of it.
+
+# TODO
+
+Everything.
+
+- Get more log examples
+- Get better at annotating specific log events with extracted metadata that's useful to filter on.
 
 # Key Assumptions
 
