@@ -10,7 +10,14 @@ A quick tool for extracting useful stuff out of multiple debug.log files from Ne
 
 ```
 yarn install
-node index.js logs/gke-onprem-healthy-4gb-json-load/
+
+# For the moment it must be called parsed.json
+node index.js logs/gke-onprem-healthy-4gb-json-load/ > parsed.json
+
+# Start local web server to serve visualization content
+python -m SimpleHTTPServer 8000
+
+(Browse to http://localhost:8000/timeline.html)
 ```
 
 # WTF does this do right now?

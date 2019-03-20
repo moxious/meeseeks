@@ -30,6 +30,7 @@ const mergeTimeline = clusterMembers => {
                 // Assign the cluster member identity to this event so we can keep them apart
                 // by key.
                 e.member = c.getIdentity();
+                e.start = e.timestamp;
                 
                 // Remove the joined text from the final result.  User still gets array
                 // of text strings from the log file back.
