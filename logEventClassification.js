@@ -9,27 +9,44 @@
  * 
  * Functions may only set eventType, and create an "extracted" data structure.
  */
-module.exports = {
-    topologyChange: e => {
-        const re = new RegExp('topology changed');
 
-        if (e.classDesignator !== 'c.n.c.d.SslHazelcastCoreTopologyService' ||
-            e.logLevel !== 'INFO' || 
-            !e.text.match(re)) { 
-                return null; 
+const onlyWhen = (e, matchCriteria, f) => {
+    let misses = 0;
+
+    Object.keys(matchCriteria).forEach(key => {
+        const val = matchCriteria[key];
+
+        if (val instanceof RegExp) {
+            if (!e[key].match(val)) {
+                misses++;
+            }
+        } else if (e[key] !== val) {
+            misses++;
         }
-        
+    });
 
+    if (misses > 0) {
+        return null;
+    }
+
+    return f(e);
+};
+
+module.exports = {
+    topologyChange: e => onlyWhen(e, {
+        classDesignator: 'c.n.c.d.SslHazelcastCoreTopologyService',
+        logLevel: 'INFO',
+        text: new RegExp('topology changed'),
+    }, e => {
         e.eventType = 'TOPOLOGY_CHANGE';
         return e;  
-    },
+    }),
 
-    identity: e => {
-        if (e.classDesignator !== 'o.n.c.c.IdentityModule' || e.logLevel !== 'INFO' || 
-            !e.text.match('id:')) {
-                return null;
-        }
-
+    identity: e => onlyWhen(e, {
+        classDesignator: 'o.n.c.c.IdentityModule',
+        logLevel: 'INFO',
+        text: new RegExp('id:'),
+    }, e => {
         const m = e.data[0].match(/MemberId\\{(.*?)\\} \\((.*?)\\)/);
         if (m) {
             e.eventType = 'MEMBER_ID';
@@ -40,13 +57,12 @@ module.exports = {
         }
 
         return e;
-    },
+    }),
 
-    raftIdentity: e => {
-        if (e.classDesignator !== 'c.n.c.d.SslHazelcastCoreTopologyService' || e.logLevel !== 'INFO' || !e.text.match('My connection info')) {
-            return null;
-        }
-
+    raftIdentity: e => onlyWhen(e, {
+        classDesignator: 'c.n.c.d.SslHazelcastCoreTopologyService',
+        logLevel: 'INFO'
+    }, e => {
         const t = e.text.replace(/\n/g, ' ');
         const m = t.match(/Raft:.*?advertised=(.*?),/);
         if (m) {
@@ -59,13 +75,12 @@ module.exports = {
         }
 
         return e;
-    },
+    }),
 
-    raftState: e => {
-        if (e.classDesignator !== 'o.n.c.c.c.s.RaftState' || e.logLevel !== 'INFO') {
-            return null;
-        }
-
+    raftState: e => onlyWhen(e, {
+        classDesignator: 'o.n.c.c.c.s.RaftState',
+        logLevel: 'INFO',
+    }, e => {
         e.eventType = 'RAFT_STATE';
 
         if (e.text.match('leader elected')) {
@@ -80,15 +95,13 @@ module.exports = {
         }
 
         return e;
-    },
+    }),
 
-    slowGC: e => {
-        if (e.classDesignator !== 'o.n.k.i.c.VmPauseMonitorComponent' ||
-            e.logLevel !== 'WARN' || 
-            !e.text.match('Detected VM stop-the-world pause')) {
-                return null;
-        }
-
+    slowGC: e => onlyWhen(e, {
+        classDesignator: 'o.n.k.i.c.VmPauseMonitorComponent',
+        logLevel: 'WARN',
+        text: new RegExp('Detected VM stop-the-world pause'),
+    }, e => {
         e.eventType = 'STOP_THE_WORLD';
         const m = e.text.match(/pauseTime=(\d+), gcTime=(\d+), gcCount=(\d+)/);
         if (m) {
@@ -100,14 +113,12 @@ module.exports = {
         }
 
         return e;
-    },
+    }),
 
-    configuration: e => {
-        if (e.classDesignator !== 'o.n.i.d.DiagnosticsManager' ||
-            e.logLevel !== 'INFO') {
-                return null;
-        }
-
+    configuration: e => onlyWhen(e, {
+        classDesignator: 'o.n.i.d.DiagnosticsManager',
+        logLevel: 'INFO',
+    }, e => {
         e.eventType = 'CONFIGURATION';
 
         const line = e.data[0];
@@ -120,7 +131,5 @@ module.exports = {
         }
 
         return e;
-    },
-
-
+    }),
 };
