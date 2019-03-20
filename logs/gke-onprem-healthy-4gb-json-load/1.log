@@ -1,0 +1,1758 @@
+2019-03-20 12:34:48.039+0000 INFO [o.n.c.c.IdentityModule] Generated new id: MemberId{e4975351} (e4975351-7cce-4227-9894-17ff2975f0db)
+2019-03-20 12:34:48.851+0000 INFO [o.n.g.f.m.e.CommunityEditionModule] No locking implementation specified, defaulting to 'forseti'
+2019-03-20 12:34:48.910+0000 INFO [o.n.c.c.TransactionBackupServiceProvider] Binding backup service on address 0.0.0.0:6362
+2019-03-20 12:34:48.915+0000 INFO [o.n.c.u.s.TypicallyConnectToRandomReadReplicaStrategy] Using upstream selection strategy typically-connect-to-random-read-replica
+2019-03-20 12:34:49.405+0000 INFO [o.n.g.f.GraphDatabaseFacadeFactory] Creating 'graph.db' database.
+2019-03-20 12:34:49.444+0000 INFO [o.n.k.i.f.StatementLocksFactorySelector] No services implementing StatementLocksFactory found. Using SimpleStatementLocksFactory
+2019-03-20 12:34:49.457+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Requirement `Database available` makes database graph.db unavailable.
+2019-03-20 12:34:49.458+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Database graph.db is unavailable.
+2019-03-20 12:34:49.485+0000 INFO [o.n.i.d.DiagnosticsManager] --- INITIALIZED diagnostics START ---
+2019-03-20 12:34:49.485+0000 INFO [o.n.i.d.DiagnosticsManager] Neo4j Kernel properties:
+2019-03-20 12:34:49.485+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.http.enabled=true
+2019-03-20 12:34:49.485+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.backup.address=0.0.0.0:6362
+2019-03-20 12:34:49.485+0000 INFO [o.n.i.d.DiagnosticsManager] causal_clustering.discovery_listen_address=0.0.0.0:5000
+2019-03-20 12:34:49.486+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.mode=CORE
+2019-03-20 12:34:49.486+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.security.auth_enabled=true
+2019-03-20 12:34:49.486+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.http.listen_address=0.0.0.0:7474
+2019-03-20 12:34:49.486+0000 INFO [o.n.i.d.DiagnosticsManager] unsupported.dbms.directories.neo4j_home=/var/lib/neo4j
+2019-03-20 12:34:49.486+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.directories.import=import
+2019-03-20 12:34:49.486+0000 INFO [o.n.i.d.DiagnosticsManager] causal_clustering.raft_advertised_address=onprem-neo4j-core-1.onprem-neo4j.default.svc.cluster.local:7000
+2019-03-20 12:34:49.486+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.memory.heap.initial_size=512M
+2019-03-20 12:34:49.486+0000 INFO [o.n.i.d.DiagnosticsManager] causal_clustering.raft_listen_address=0.0.0.0:7000
+2019-03-20 12:34:49.486+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.bolt.tls_level=OPTIONAL
+2019-03-20 12:34:49.487+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.backup.enabled=true
+2019-03-20 12:34:49.487+0000 INFO [o.n.i.d.DiagnosticsManager] causal_clustering.minimum_core_cluster_size_at_runtime=3
+2019-03-20 12:34:49.487+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connectors.default_advertised_address=onprem-neo4j-core-1.onprem-neo4j.default.svc.cluster.local
+2019-03-20 12:34:49.487+0000 INFO [o.n.i.d.DiagnosticsManager] ACCEPT.LICENSE.AGREEMENT=yes
+2019-03-20 12:34:49.487+0000 INFO [o.n.i.d.DiagnosticsManager] ha.host.coordination=onprem-neo4j-core-1:5001
+2019-03-20 12:34:49.487+0000 INFO [o.n.i.d.DiagnosticsManager] causal_clustering.discovery_type=DNS
+2019-03-20 12:34:49.487+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.https.enabled=true
+2019-03-20 12:34:49.487+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.jvm.additional=-Dunsupported.dbms.udc.source=google-gke-core
+2019-03-20 12:34:49.487+0000 INFO [o.n.i.d.DiagnosticsManager] causal_clustering.minimum_core_cluster_size_at_formation=3
+2019-03-20 12:34:49.488+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.tx_log.rotation.retention_policy=100M size
+2019-03-20 12:34:49.488+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.memory.heap.max_size=512M
+2019-03-20 12:34:49.488+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connectors.default_listen_address=0.0.0.0
+2019-03-20 12:34:49.488+0000 INFO [o.n.i.d.DiagnosticsManager] EDITION=enterprise
+2019-03-20 12:34:49.488+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.security.procedures.unrestricted=apoc.*,algo.*
+2019-03-20 12:34:49.488+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.windows_service_name=neo4j
+2019-03-20 12:34:49.488+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.https.listen_address=0.0.0.0:7473
+2019-03-20 12:34:49.488+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.bolt.listen_address=0.0.0.0:7687
+2019-03-20 12:34:49.488+0000 INFO [o.n.i.d.DiagnosticsManager] apoc.import.file.enabled=true
+2019-03-20 12:34:49.489+0000 INFO [o.n.i.d.DiagnosticsManager] causal_clustering.transaction_advertised_address=onprem-neo4j-core-1.onprem-neo4j.default.svc.cluster.local:6000
+2019-03-20 12:34:49.489+0000 INFO [o.n.i.d.DiagnosticsManager] causal_clustering.discovery_advertised_address=onprem-neo4j-core-1.onprem-neo4j.default.svc.cluster.local:5000
+2019-03-20 12:34:49.489+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.memory.pagecache.size=512M
+2019-03-20 12:34:49.489+0000 INFO [o.n.i.d.DiagnosticsManager] SECRETS.PASSWORD=DrvHxTPKN3
+2019-03-20 12:34:49.489+0000 INFO [o.n.i.d.DiagnosticsManager] ha.host.data=onprem-neo4j-core-1:6001
+2019-03-20 12:34:49.489+0000 INFO [o.n.i.d.DiagnosticsManager] causal_clustering.initial_discovery_members=onprem-neo4j.default.svc.cluster.local:5000
+2019-03-20 12:34:49.489+0000 INFO [o.n.i.d.DiagnosticsManager] unsupported.dbms.edition=enterprise
+2019-03-20 12:34:49.489+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.directories.logs=/logs
+2019-03-20 12:34:49.489+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.bolt.enabled=true
+2019-03-20 12:34:49.489+0000 INFO [o.n.i.d.DiagnosticsManager] causal_clustering.transaction_listen_address=0.0.0.0:6000
+2019-03-20 12:34:49.490+0000 INFO [o.n.i.d.DiagnosticsManager] wrapper.java.additional=-Dneo4j.ext.udc.source=docker
+2019-03-20 12:34:49.490+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.directories.plugins=/plugins
+2019-03-20 12:34:49.490+0000 INFO [o.n.i.d.DiagnosticsManager] HOME=/var/lib/neo4j
+2019-03-20 12:34:49.490+0000 INFO [o.n.i.d.DiagnosticsManager] Diagnostics providers:
+2019-03-20 12:34:49.490+0000 INFO [o.n.i.d.DiagnosticsManager] org.neo4j.kernel.configuration.Config
+2019-03-20 12:34:49.490+0000 INFO [o.n.i.d.DiagnosticsManager] org.neo4j.internal.diagnostics.DiagnosticsManager
+2019-03-20 12:34:49.490+0000 INFO [o.n.i.d.DiagnosticsManager] SYSTEM_MEMORY
+2019-03-20 12:34:49.490+0000 INFO [o.n.i.d.DiagnosticsManager] JAVA_MEMORY
+2019-03-20 12:34:49.490+0000 INFO [o.n.i.d.DiagnosticsManager] OPERATING_SYSTEM
+2019-03-20 12:34:49.491+0000 INFO [o.n.i.d.DiagnosticsManager] JAVA_VIRTUAL_MACHINE
+2019-03-20 12:34:49.491+0000 INFO [o.n.i.d.DiagnosticsManager] CLASSPATH
+2019-03-20 12:34:49.491+0000 INFO [o.n.i.d.DiagnosticsManager] LIBRARY_PATH
+2019-03-20 12:34:49.491+0000 INFO [o.n.i.d.DiagnosticsManager] SYSTEM_PROPERTIES
+2019-03-20 12:34:49.491+0000 INFO [o.n.i.d.DiagnosticsManager] TIMEZONE_DATABASE
+2019-03-20 12:34:49.491+0000 INFO [o.n.i.d.DiagnosticsManager] LINUX_SCHEDULERS
+2019-03-20 12:34:49.491+0000 INFO [o.n.i.d.DiagnosticsManager] NETWORK
+2019-03-20 12:34:49.491+0000 INFO [o.n.i.d.DiagnosticsManager] System memory information:
+2019-03-20 12:34:49.508+0000 INFO [o.n.i.d.DiagnosticsManager] Total Physical memory: 7.79 GB
+2019-03-20 12:34:49.508+0000 INFO [o.n.i.d.DiagnosticsManager] Free Physical memory: 3.95 GB
+2019-03-20 12:34:49.509+0000 INFO [o.n.i.d.DiagnosticsManager] Committed virtual memory: 1.91 GB
+2019-03-20 12:34:49.509+0000 INFO [o.n.i.d.DiagnosticsManager] Total swap space: 0.00 B
+2019-03-20 12:34:49.509+0000 INFO [o.n.i.d.DiagnosticsManager] Free swap space: 0.00 B
+2019-03-20 12:34:49.509+0000 INFO [o.n.i.d.DiagnosticsManager] JVM memory information:
+2019-03-20 12:34:49.509+0000 INFO [o.n.i.d.DiagnosticsManager] Free  memory: 449.09 MB
+2019-03-20 12:34:49.509+0000 INFO [o.n.i.d.DiagnosticsManager] Total memory: 491.00 MB
+2019-03-20 12:34:49.509+0000 INFO [o.n.i.d.DiagnosticsManager] Max   memory: 491.00 MB
+2019-03-20 12:34:49.511+0000 INFO [o.n.i.d.DiagnosticsManager] Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+2019-03-20 12:34:49.512+0000 INFO [o.n.i.d.DiagnosticsManager] Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen]
+2019-03-20 12:34:49.512+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: Code Cache (Non-heap memory): committed=6.56 MB, used=6.51 MB, max=240.00 MB, threshold=0.00 B
+2019-03-20 12:34:49.512+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: Metaspace (Non-heap memory): committed=26.63 MB, used=25.36 MB, max=-1.00 B, threshold=0.00 B
+2019-03-20 12:34:49.513+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: Compressed Class Space (Non-heap memory): committed=3.38 MB, used=3.08 MB, max=1.00 GB, threshold=0.00 B
+2019-03-20 12:34:49.513+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: PS Eden Space (Heap memory): committed=128.50 MB, used=25.89 MB, max=128.50 MB, threshold=?
+2019-03-20 12:34:49.513+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: PS Survivor Space (Heap memory): committed=21.00 MB, used=4.04 MB, max=21.00 MB, threshold=?
+2019-03-20 12:34:49.514+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: PS Old Gen (Heap memory): committed=341.50 MB, used=11.98 MB, max=341.50 MB, threshold=0.00 B
+2019-03-20 12:34:49.514+0000 INFO [o.n.i.d.DiagnosticsManager] Operating system information:
+2019-03-20 12:34:49.514+0000 INFO [o.n.i.d.DiagnosticsManager] Operating System: Linux; version: 4.15.0-34-generic; arch: amd64; cpus: 2
+2019-03-20 12:34:49.514+0000 INFO [o.n.i.d.DiagnosticsManager] Max number of file descriptors: 1048576
+2019-03-20 12:34:49.515+0000 INFO [o.n.i.d.DiagnosticsManager] Number of open file descriptors: 200
+2019-03-20 12:34:49.516+0000 INFO [o.n.i.d.DiagnosticsManager] Process id: 1@onprem-neo4j-core-1
+2019-03-20 12:34:49.516+0000 INFO [o.n.i.d.DiagnosticsManager] Byte order: LITTLE_ENDIAN
+2019-03-20 12:34:49.522+0000 INFO [o.n.i.d.DiagnosticsManager] Local timezone: GMT
+2019-03-20 12:34:49.522+0000 INFO [o.n.i.d.DiagnosticsManager] JVM information:
+2019-03-20 12:34:49.522+0000 INFO [o.n.i.d.DiagnosticsManager] VM Name: OpenJDK 64-Bit Server VM
+2019-03-20 12:34:49.523+0000 INFO [o.n.i.d.DiagnosticsManager] VM Vendor: Oracle Corporation
+2019-03-20 12:34:49.523+0000 INFO [o.n.i.d.DiagnosticsManager] VM Version: 25.191-b12
+2019-03-20 12:34:49.523+0000 INFO [o.n.i.d.DiagnosticsManager] JIT compiler: HotSpot 64-Bit Tiered Compilers
+2019-03-20 12:34:49.524+0000 INFO [o.n.i.d.DiagnosticsManager] VM Arguments: [-Xms512M, -Xmx512M, -Dunsupported.dbms.udc.source=google-gke-core, -Dfile.encoding=UTF-8]
+2019-03-20 12:34:49.524+0000 INFO [o.n.i.d.DiagnosticsManager] Java classpath:
+2019-03-20 12:34:49.530+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-causal-clustering-commercial-3.5.3.jar
+2019-03-20 12:34:49.530+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-backup-3.5.3.jar
+2019-03-20 12:34:49.530+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/jackson-core-asl-1.9.13.jar
+2019-03-20 12:34:49.530+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/simpleclient_common-0.5.0.jar
+2019-03-20 12:34:49.530+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-dbms-3.5.3.jar
+2019-03-20 12:34:49.530+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/asm-analysis-6.2.jar
+2019-03-20 12:34:49.530+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/concurrentlinkedhashmap-lru-1.4.2.jar
+2019-03-20 12:34:49.530+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/jPowerShell-1.9.jar
+2019-03-20 12:34:49.530+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/netty-3.9.9.Final.jar
+2019-03-20 12:34:49.530+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-cypher-ir-3.5-3.5.3.jar
+2019-03-20 12:34:49.530+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/jaxb-runtime-2.3.0.1.jar
+2019-03-20 12:34:49.530+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-cypher-planner-spi-3.5-3.5.3.jar
+2019-03-20 12:34:49.530+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/commons-io-2.6.jar
+2019-03-20 12:34:49.530+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-query-logging-3.5.3.jar
+2019-03-20 12:34:49.530+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/akka-cluster-tools_2.11-2.5.18.jar
+2019-03-20 12:34:49.530+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/jersey-core-1.19.3.jar
+2019-03-20 12:34:49.531+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-server-3.5.3.jar
+2019-03-20 12:34:49.531+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/commons-configuration-1.10.jar
+2019-03-20 12:34:49.531+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-enterprise-kernel-3.5.3.jar
+2019-03-20 12:34:49.531+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-ssl-3.5.3.jar
+2019-03-20 12:34:49.531+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/usr/lib/jvm/java-1.8-openjdk/jre/lib/ext/sunec.jar
+2019-03-20 12:34:49.531+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-ast-3.5-3.5.3.jar
+2019-03-20 12:34:49.531+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-auth-plugin-api-3.5.3.jar
+2019-03-20 12:34:49.531+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-import-tool-3.5.3.jar
+2019-03-20 12:34:49.531+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-fulltext-index-3.5.3.jar
+2019-03-20 12:34:49.531+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-cypher-morsel-runtime-3.5.3.jar
+2019-03-20 12:34:49.531+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-cypher-runtime-util-3.5.3.jar
+2019-03-20 12:34:49.531+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/scala-library-2.11.12.jar
+2019-03-20 12:34:49.531+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /usr/lib/jvm/java-1.8-openjdk/jre/classes
+2019-03-20 12:34:49.531+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-security-3.5.3.jar
+2019-03-20 12:34:49.531+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-legacy-3.5.3.jar
+2019-03-20 12:34:49.531+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/jetty-security-9.4.11.v20180605.jar
+2019-03-20 12:34:49.531+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/jaxb-core-2.3.0.1.jar
+2019-03-20 12:34:49.532+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-cypher-util-3.4-3.4.12.jar
+2019-03-20 12:34:49.532+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/usr/lib/jvm/java-1.8-openjdk/jre/lib/ext/localedata.jar
+2019-03-20 12:34:49.532+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/jProcesses-1.6.4.jar
+2019-03-20 12:34:49.532+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-jmx-3.5.3.jar
+2019-03-20 12:34:49.532+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-udc-3.5.3.jar
+2019-03-20 12:34:49.532+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/asm-util-6.2.jar
+2019-03-20 12:34:49.532+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/config-1.3.3.jar
+2019-03-20 12:34:49.532+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/commons-lang-2.6.jar
+2019-03-20 12:34:49.532+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/commons-compress-1.18.jar
+2019-03-20 12:34:49.532+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/lucene-codecs-5.5.5.jar
+2019-03-20 12:34:49.532+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/akka-cluster_2.11-2.5.18.jar
+2019-03-20 12:34:49.532+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-expressions-3.5-3.5.3.jar
+2019-03-20 12:34:49.532+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-values-3.5.3.jar
+2019-03-20 12:34:49.532+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/simpleclient-0.5.0.jar
+2019-03-20 12:34:49.532+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/usr/lib/jvm/java-1.8-openjdk/jre/lib/ext/nashorn.jar
+2019-03-20 12:34:49.532+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/eclipse-collections-9.2.0.jar
+2019-03-20 12:34:49.532+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/server-api-3.5.3.jar
+2019-03-20 12:34:49.532+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /usr/lib/jvm/java-1.8-openjdk/jre/lib/jfr.jar
+2019-03-20 12:34:49.532+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-spatial-index-3.5.3.jar
+2019-03-20 12:34:49.532+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-command-line-3.5.3.jar
+2019-03-20 12:34:49.533+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-cypher-slotted-runtime-3.5.3.jar
+2019-03-20 12:34:49.533+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-codegen-3.5.3.jar
+2019-03-20 12:34:49.533+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/scallop_2.11-2.1.1.jar
+2019-03-20 12:34:49.533+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-browser-3.2.16.jar
+2019-03-20 12:34:49.533+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-resource-3.5.3.jar
+2019-03-20 12:34:49.533+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/akka-actor_2.11-2.5.18.jar
+2019-03-20 12:34:49.533+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-common-3.5.3.jar
+2019-03-20 12:34:49.533+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/opencsv-2.3.jar
+2019-03-20 12:34:49.533+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/parboiled-scala_2.11-1.1.7.jar
+2019-03-20 12:34:49.533+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-consistency-check-3.5.3.jar
+2019-03-20 12:34:49.533+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/shiro-cache-1.4.0.jar
+2019-03-20 12:34:49.533+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/kiama_2.11-2.1.0.jar
+2019-03-20 12:34:49.533+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-enterprise-cypher-3.5.3.jar
+2019-03-20 12:34:49.533+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-cypher-interpreted-runtime-3.5.3.jar
+2019-03-20 12:34:49.533+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/scala-parser-combinators_2.11-1.1.1.jar
+2019-03-20 12:34:49.533+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /usr/lib/jvm/java-1.8-openjdk/jre/lib/resources.jar
+2019-03-20 12:34:49.533+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/lz4-1.3.0.jar
+2019-03-20 12:34:49.533+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /usr/lib/jvm/java-1.8-openjdk/jre/lib/charsets.jar
+2019-03-20 12:34:49.533+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-server-enterprise-3.5.3.jar
+2019-03-20 12:34:49.534+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-bolt-3.5.3.jar
+2019-03-20 12:34:49.534+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-cypher-planner-3.5-3.5.3.jar
+2019-03-20 12:34:49.534+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/reactive-streams-1.0.2.jar
+2019-03-20 12:34:49.534+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/eclipse-collections-api-9.2.0.jar
+2019-03-20 12:34:49.534+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/jackson-mapper-asl-1.9.13.jar
+2019-03-20 12:34:49.534+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-cluster-3.5.3.jar
+2019-03-20 12:34:49.534+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/lucene-queryparser-5.5.5.jar
+2019-03-20 12:34:49.534+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/bcprov-jdk15on-1.60.jar
+2019-03-20 12:34:49.534+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-graphdb-api-3.5.3.jar
+2019-03-20 12:34:49.534+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/jackson-jaxrs-1.9.13.jar
+2019-03-20 12:34:49.534+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/usr/lib/jvm/java-1.8-openjdk/jre/lib/ext/zipfs.jar
+2019-03-20 12:34:49.534+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-cypher-frontend-3.1-3.1.9.jar
+2019-03-20 12:34:49.534+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/shiro-crypto-cipher-1.4.0.jar
+2019-03-20 12:34:49.534+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-index-3.5.3.jar
+2019-03-20 12:34:49.534+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-procedure-api-3.5.3.jar
+2019-03-20 12:34:49.534+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/istack-commons-runtime-3.0.5.jar
+2019-03-20 12:34:49.534+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/plugins/
+2019-03-20 12:34:49.534+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/lucene-analyzers-common-5.5.5.jar
+2019-03-20 12:34:49.534+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/akka-protobuf_2.11-2.5.18.jar
+2019-03-20 12:34:49.534+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/jetty-client-9.4.11.v20180605.jar
+2019-03-20 12:34:49.534+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/aeron-driver-1.11.2.jar
+2019-03-20 12:34:49.534+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/commons-logging-1.1.1.jar
+2019-03-20 12:34:49.535+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-cypher-planner-3.4-3.4.12.jar
+2019-03-20 12:34:49.535+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/commons-text-1.4.jar
+2019-03-20 12:34:49.535+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-graph-matching-3.1.9.jar
+2019-03-20 12:34:49.535+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-configuration-3.5.3.jar
+2019-03-20 12:34:49.535+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-metrics-3.5.3.jar
+2019-03-20 12:34:49.535+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-cypher-planner-spi-3.4-3.4.12.jar
+2019-03-20 12:34:49.535+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/usr/lib/jvm/java-1.8-openjdk/jre/lib/ext/jaccess.jar
+2019-03-20 12:34:49.535+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/jline-2.14.3.jar
+2019-03-20 12:34:49.535+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/shiro-crypto-core-1.4.0.jar
+2019-03-20 12:34:49.535+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-collections-3.5.3.jar
+2019-03-20 12:34:49.535+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-util-3.5-3.5.3.jar
+2019-03-20 12:34:49.535+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-causal-clustering-3.5.3.jar
+2019-03-20 12:34:49.535+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-parser-3.5-3.5.3.jar
+2019-03-20 12:34:49.535+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/jersey-server-1.19.3.jar
+2019-03-20 12:34:49.535+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /usr/lib/jvm/java-1.8-openjdk/jre/lib/jce.jar
+2019-03-20 12:34:49.535+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-front-end-3.5-3.5.3.jar
+2019-03-20 12:34:49.535+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/simpleclient_dropwizard-0.5.0.jar
+2019-03-20 12:34:49.535+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-cypher-physical-planning-3.5.3.jar
+2019-03-20 12:34:49.535+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/jetty-util-9.4.11.v20180605.jar
+2019-03-20 12:34:49.535+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/asm-6.2.jar
+2019-03-20 12:34:49.536+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/shiro-config-core-1.4.0.jar
+2019-03-20 12:34:49.536+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-com-3.5.3.jar
+2019-03-20 12:34:49.536+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/jersey-servlet-1.19.3.jar
+2019-03-20 12:34:49.536+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/akka-remote_2.11-2.5.18.jar
+2019-03-20 12:34:49.536+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/shiro-event-1.4.0.jar
+2019-03-20 12:34:49.536+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-security-commercial-3.5.3.jar
+2019-03-20 12:34:49.536+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-lucene-index-3.5.3.jar
+2019-03-20 12:34:49.536+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/shiro-crypto-hash-1.4.0.jar
+2019-03-20 12:34:49.536+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/jetty-servlet-9.4.11.v20180605.jar
+2019-03-20 12:34:49.536+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-diagnostics-3.5.3.jar
+2019-03-20 12:34:49.536+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/javax.servlet-api-3.1.0.jar
+2019-03-20 12:34:49.536+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /usr/lib/jvm/java-1.8-openjdk/jre/lib/rt.jar
+2019-03-20 12:34:49.536+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-concurrent-3.5.3.jar
+2019-03-20 12:34:49.536+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-cypher-compiler-2.3-2.3.12.jar
+2019-03-20 12:34:49.536+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-3.5.3.jar
+2019-03-20 12:34:49.536+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-unsafe-3.5.3.jar
+2019-03-20 12:34:49.536+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-rewriting-3.5-3.5.3.jar
+2019-03-20 12:34:49.536+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/scala-reflect-2.11.12.jar
+2019-03-20 12:34:49.536+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-cypher-logical-plans-3.4-3.4.12.jar
+2019-03-20 12:34:49.536+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/plugins/apoc-3.5.0.1-all.jar
+2019-03-20 12:34:49.536+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/usr/lib/jvm/java-1.8-openjdk/jre/lib/ext/sunjce_provider.jar
+2019-03-20 12:34:49.537+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/slf4j-nop-1.7.25.jar
+2019-03-20 12:34:49.537+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/openCypher-frontend-1-3.4.12.jar
+2019-03-20 12:34:49.537+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/ssl-config-core_2.11-0.3.6.jar
+2019-03-20 12:34:49.537+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/lucene-core-5.5.5.jar
+2019-03-20 12:34:49.537+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-csv-3.5.3.jar
+2019-03-20 12:34:49.537+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/simpleclient_httpserver-0.5.0.jar
+2019-03-20 12:34:49.537+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/shiro-core-1.4.0.jar
+2019-03-20 12:34:49.537+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/activation-1.1.1.jar
+2019-03-20 12:34:49.537+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-cypher-compiler-3.1-3.1.9.jar
+2019-03-20 12:34:49.537+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/commons-beanutils-1.9.3.jar
+2019-03-20 12:34:49.537+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/usr/lib/jvm/java-1.8-openjdk/jre/lib/ext/dnsns.jar
+2019-03-20 12:34:49.537+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/commons-lang3-3.8.jar
+2019-03-20 12:34:49.537+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/FastInfoset-1.2.13.jar
+2019-03-20 12:34:49.537+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/conf/
+2019-03-20 12:34:49.537+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/usr/lib/jvm/java-1.8-openjdk/jre/lib/ext/sunpkcs11.jar
+2019-03-20 12:34:49.537+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/asm-tree-6.2.jar
+2019-03-20 12:34:49.537+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/aeron-client-1.11.2.jar
+2019-03-20 12:34:49.537+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/plugins/graph-algorithms-algo-3.5.0.1.jar
+2019-03-20 12:34:49.537+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/hazelcast-all-3.7.8.jar
+2019-03-20 12:34:49.537+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/jaxb-api-2.3.0.jar
+2019-03-20 12:34:49.538+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/jetty-webapp-9.4.11.v20180605.jar
+2019-03-20 12:34:49.538+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/netty-all-4.1.32.Final.jar
+2019-03-20 12:34:49.538+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-server-commercial-3.5.3.jar
+2019-03-20 12:34:49.538+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-cypher-logical-plans-3.5-3.5.3.jar
+2019-03-20 12:34:49.538+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-management-3.5.3.jar
+2019-03-20 12:34:49.538+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-cypher-3.5.3.jar
+2019-03-20 12:34:49.538+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/txw2-2.3.0.1.jar
+2019-03-20 12:34:49.538+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/akka-stream_2.11-2.5.18.jar
+2019-03-20 12:34:49.538+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/jetty-server-9.4.11.v20180605.jar
+2019-03-20 12:34:49.538+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-lucene-upgrade-3.5.3.jar
+2019-03-20 12:34:49.538+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-cypher-ir-3.4-3.4.12.jar
+2019-03-20 12:34:49.538+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-kernel-3.5.3.jar
+2019-03-20 12:34:49.538+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-kernel-commercial-3.5.3.jar
+2019-03-20 12:34:49.538+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-cypher-expression-3.4-3.4.12.jar
+2019-03-20 12:34:49.538+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/metrics-core-4.0.2.jar
+2019-03-20 12:34:49.538+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/slf4j-api-1.7.25.jar
+2019-03-20 12:34:49.538+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/jetty-http-9.4.11.v20180605.jar
+2019-03-20 12:34:49.538+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/metrics-graphite-4.0.2.jar
+2019-03-20 12:34:49.538+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/stax-ex-1.7.8.jar
+2019-03-20 12:34:49.539+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/caffeine-2.6.2.jar
+2019-03-20 12:34:49.539+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/akka-distributed-data_2.11-2.5.18.jar
+2019-03-20 12:34:49.539+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-kernel-api-3.5.3.jar
+2019-03-20 12:34:49.539+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-io-3.5.3.jar
+2019-03-20 12:34:49.539+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/WMI4Java-1.6.1.jar
+2019-03-20 12:34:49.539+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/usr/lib/jvm/java-1.8-openjdk/jre/lib/ext/cldrdata.jar
+2019-03-20 12:34:49.539+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/agrona-0.9.25.jar
+2019-03-20 12:34:49.539+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-graph-algo-3.5.3.jar
+2019-03-20 12:34:49.539+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/jsr311-api-1.1.2.r612.jar
+2019-03-20 12:34:49.539+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/jetty-xml-9.4.11.v20180605.jar
+2019-03-20 12:34:49.539+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-cypher-frontend-2.3-2.3.12.jar
+2019-03-20 12:34:49.539+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/shiro-config-ogdl-1.4.0.jar
+2019-03-20 12:34:49.539+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-security-enterprise-3.5.3.jar
+2019-03-20 12:34:49.539+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /usr/lib/jvm/java-1.8-openjdk/jre/lib/jsse.jar
+2019-03-20 12:34:49.539+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /usr/lib/jvm/java-1.8-openjdk/jre/lib/sunrsasign.jar
+2019-03-20 12:34:49.539+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/bcpkix-jdk15on-1.60.jar
+2019-03-20 12:34:49.539+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-logging-3.5.3.jar
+2019-03-20 12:34:49.539+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-ha-3.5.3.jar
+2019-03-20 12:34:49.539+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-commercial-3.5.3.jar
+2019-03-20 12:34:49.539+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/shiro-lang-1.4.0.jar
+2019-03-20 12:34:49.539+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/jetty-io-9.4.11.v20180605.jar
+2019-03-20 12:34:49.540+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/commons-collections-3.2.2.jar
+2019-03-20 12:34:49.540+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/parboiled-core-1.1.7.jar
+2019-03-20 12:34:49.540+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/scala-java8-compat_2.11-0.7.0.jar
+2019-03-20 12:34:49.540+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-cypher-compiled-expressions-3.5.3.jar
+2019-03-20 12:34:49.540+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/var/lib/neo4j/lib/neo4j-data-collector-3.5.3.jar
+2019-03-20 12:34:49.540+0000 INFO [o.n.i.d.DiagnosticsManager] Library path:
+2019-03-20 12:34:49.540+0000 INFO [o.n.i.d.DiagnosticsManager] /usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64/server
+2019-03-20 12:34:49.540+0000 INFO [o.n.i.d.DiagnosticsManager] /usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64
+2019-03-20 12:34:49.540+0000 INFO [o.n.i.d.DiagnosticsManager] /usr/lib/jvm/java-1.8-openjdk/lib/amd64
+2019-03-20 12:34:49.540+0000 INFO [o.n.i.d.DiagnosticsManager] /usr/java/packages/lib/amd64
+2019-03-20 12:34:49.540+0000 INFO [o.n.i.d.DiagnosticsManager] /usr/lib64
+2019-03-20 12:34:49.540+0000 INFO [o.n.i.d.DiagnosticsManager] /lib64
+2019-03-20 12:34:49.540+0000 INFO [o.n.i.d.DiagnosticsManager] /lib
+2019-03-20 12:34:49.541+0000 INFO [o.n.i.d.DiagnosticsManager] /usr/lib
+2019-03-20 12:34:49.541+0000 INFO [o.n.i.d.DiagnosticsManager] System.properties:
+2019-03-20 12:34:49.541+0000 INFO [o.n.i.d.DiagnosticsManager] hazelcast.shutdownhook.enabled = false
+2019-03-20 12:34:49.541+0000 INFO [o.n.i.d.DiagnosticsManager] sun.boot.library.path = /usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64
+2019-03-20 12:34:49.541+0000 INFO [o.n.i.d.DiagnosticsManager] path.separator = :
+2019-03-20 12:34:49.541+0000 INFO [o.n.i.d.DiagnosticsManager] file.encoding.pkg = sun.io
+2019-03-20 12:34:49.541+0000 INFO [o.n.i.d.DiagnosticsManager] user.country = US
+2019-03-20 12:34:49.541+0000 INFO [o.n.i.d.DiagnosticsManager] sun.java.launcher = SUN_STANDARD
+2019-03-20 12:34:49.541+0000 INFO [o.n.i.d.DiagnosticsManager] sun.os.patch.level = unknown
+2019-03-20 12:34:49.541+0000 INFO [o.n.i.d.DiagnosticsManager] user.dir = /var/lib/neo4j
+2019-03-20 12:34:49.541+0000 INFO [o.n.i.d.DiagnosticsManager] hazelcast.wait.seconds.before.join = 1
+2019-03-20 12:34:49.541+0000 INFO [o.n.i.d.DiagnosticsManager] sun.jnu.encoding = UTF-8
+2019-03-20 12:34:49.541+0000 INFO [o.n.i.d.DiagnosticsManager] hazelcast.phone.home.enabled = false
+2019-03-20 12:34:49.541+0000 INFO [o.n.i.d.DiagnosticsManager] unsupported.dbms.udc.source = google-gke-core
+2019-03-20 12:34:49.542+0000 INFO [o.n.i.d.DiagnosticsManager] sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2019-03-20 12:34:49.542+0000 INFO [o.n.i.d.DiagnosticsManager] hazelcast.logging.type = none
+2019-03-20 12:34:49.542+0000 INFO [o.n.i.d.DiagnosticsManager] user.home = /var/lib/neo4j
+2019-03-20 12:34:49.542+0000 INFO [o.n.i.d.DiagnosticsManager] user.timezone = GMT
+2019-03-20 12:34:49.542+0000 INFO [o.n.i.d.DiagnosticsManager] file.encoding = UTF-8
+2019-03-20 12:34:49.542+0000 INFO [o.n.i.d.DiagnosticsManager] hazelcast.socket.bind.any = false
+2019-03-20 12:34:49.542+0000 INFO [o.n.i.d.DiagnosticsManager] user.name = neo4j
+2019-03-20 12:34:49.542+0000 INFO [o.n.i.d.DiagnosticsManager] sun.java.command = com.neo4j.server.enterprise.CommercialEntryPoint --home-dir=/var/lib/neo4j --config-dir=/var/lib/neo4j/conf
+2019-03-20 12:34:49.542+0000 INFO [o.n.i.d.DiagnosticsManager] sun.arch.data.model = 64
+2019-03-20 12:34:49.542+0000 INFO [o.n.i.d.DiagnosticsManager] user.language = en
+2019-03-20 12:34:49.542+0000 INFO [o.n.i.d.DiagnosticsManager] awt.toolkit = sun.awt.X11.XToolkit
+2019-03-20 12:34:49.542+0000 INFO [o.n.i.d.DiagnosticsManager] file.separator = /
+2019-03-20 12:34:49.542+0000 INFO [o.n.i.d.DiagnosticsManager] sun.io.unicode.encoding = UnicodeLittle
+2019-03-20 12:34:49.542+0000 INFO [o.n.i.d.DiagnosticsManager] sun.cpu.endian = little
+2019-03-20 12:34:49.542+0000 INFO [o.n.i.d.DiagnosticsManager] sun.cpu.isalist = 
+2019-03-20 12:34:49.542+0000 INFO [o.n.i.d.DiagnosticsManager] (IANA) TimeZone Database Version:
+2019-03-20 12:34:49.605+0000 INFO [o.n.i.d.DiagnosticsManager]   TimeZone version: 2018e (available for 599 zone identifiers)
+2019-03-20 12:34:49.605+0000 INFO [o.n.i.d.DiagnosticsManager] Linux scheduler information:
+2019-03-20 12:34:49.610+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-03-20 12:34:49.610+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-03-20 12:34:49.610+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-03-20 12:34:49.611+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-03-20 12:34:49.611+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-03-20 12:34:49.611+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-03-20 12:34:49.611+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-03-20 12:34:49.611+0000 INFO [o.n.i.d.DiagnosticsManager] noop deadline [cfq] 
+2019-03-20 12:34:49.612+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-03-20 12:34:49.612+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-03-20 12:34:49.612+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-03-20 12:34:49.612+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-03-20 12:34:49.612+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-03-20 12:34:49.613+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-03-20 12:34:49.613+0000 INFO [o.n.i.d.DiagnosticsManager] Network information:
+2019-03-20 12:34:49.614+0000 INFO [o.n.i.d.DiagnosticsManager] Interface eth0:
+2019-03-20 12:34:49.615+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:3c0d:e8ff:fe09:4da6%eth0
+2019-03-20 12:34:49.615+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 192.168.1.20
+2019-03-20 12:34:49.615+0000 INFO [o.n.i.d.DiagnosticsManager] Interface lo:
+2019-03-20 12:34:49.615+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 0:0:0:0:0:0:0:1%lo
+2019-03-20 12:34:49.615+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 127.0.0.1
+2019-03-20 12:34:49.615+0000 INFO [o.n.i.d.DiagnosticsManager] --- INITIALIZED diagnostics END ---
+2019-03-20 12:34:49.622+0000 INFO [o.n.c.c.s.s.DurableStateStorage] term state restored, up to ordinal 0
+2019-03-20 12:34:49.625+0000 INFO [o.n.c.c.s.s.DurableStateStorage] vote state restored, up to ordinal -1
+2019-03-20 12:34:49.629+0000 INFO [o.n.c.c.s.s.DurableStateStorage] membership state restored, up to ordinal -1
+2019-03-20 12:34:49.633+0000 INFO [o.n.c.c.s.s.DurableStateStorage] session-tracker state restored, up to ordinal -1
+2019-03-20 12:34:49.639+0000 INFO [o.n.c.c.s.s.DurableStateStorage] lock-token state restored, up to ordinal -1
+2019-03-20 12:34:49.643+0000 INFO [o.n.c.c.s.s.DurableStateStorage] id-allocation state restored, up to ordinal -1
+2019-03-20 12:34:49.646+0000 INFO [o.n.c.c.s.s.DurableStateStorage] last-flushed state restored, up to ordinal -1
+2019-03-20 12:34:49.713+0000 INFO [o.n.m.MetricsExtension] Initiating metrics...
+2019-03-20 12:34:49.726+0000 INFO [o.n.c.c.IdFilesSanitationModule] ID-files deleted for graph.db
+2019-03-20 12:34:49.727+0000 INFO [c.n.c.d.SslHazelcastCoreTopologyService] Cluster discovery service starting
+2019-03-20 12:34:49.743+0000 INFO [o.n.c.d.DnsHostnameResolver] Resolved initial host 'onprem-neo4j.default.svc.cluster.local:5000' to [192.168.0.75:5000, 192.168.1.20:5000, 192.168.2.33:5000]
+2019-03-20 12:34:49.808+0000 INFO [c.n.c.d.SslHazelcastCoreTopologyService] My connection info: [
+	Discovery:   listen=0.0.0.0:5000, advertised=onprem-neo4j-core-1.onprem-neo4j.default.svc.cluster.local:5000,
+	Transaction: listen=0.0.0.0:6000, advertised=onprem-neo4j-core-1.onprem-neo4j.default.svc.cluster.local:6000, 
+	Raft:        listen=0.0.0.0:7000, advertised=onprem-neo4j-core-1.onprem-neo4j.default.svc.cluster.local:7000, 
+	Client Connector Addresses: bolt://onprem-neo4j-core-1.onprem-neo4j.default.svc.cluster.local:7687,http://onprem-neo4j-core-1.onprem-neo4j.default.svc.cluster.local:7474,https://onprem-neo4j-core-1.onprem-neo4j.default.svc.cluster.local:7473
+]
+2019-03-20 12:34:49.808+0000 INFO [c.n.c.d.SslHazelcastCoreTopologyService] Discovering other core members in initial members set: [192.168.0.75:5000, 192.168.1.20:5000, 192.168.2.33:5000]
+2019-03-20 12:34:49.837+0000 INFO [o.n.c.c.c.l.s.SegmentedRaftLog] log started with recovered state State{prevIndex=-1, prevTerm=-1, appendIndex=-1}
+2019-03-20 12:34:49.838+0000 INFO [o.n.c.c.c.m.RaftMembershipManager] Membership state before recovery: RaftMembershipState{committed=null, appended=null, ordinal=-1}
+2019-03-20 12:34:49.838+0000 INFO [o.n.c.c.c.m.RaftMembershipManager] Recovering from: -1 to: -1
+2019-03-20 12:34:49.840+0000 INFO [o.n.c.c.c.m.RaftMembershipManager] Membership state after recovery: RaftMembershipState{committed=null, appended=null, ordinal=-1}
+2019-03-20 12:34:49.841+0000 INFO [o.n.c.c.c.m.RaftMembershipManager] Target membership: []
+2019-03-20 12:34:50.118+0000 INFO [o.n.c.n.Server] raft-server: bound to 0.0.0.0:7000
+2019-03-20 12:34:50.123+0000 INFO [o.n.c.d.CoreMonitor] Waiting for a total of 3 core members...
+2019-03-20 12:34:58.106+0000 INFO [c.n.c.d.SslHazelcastCoreTopologyService] Cluster discovery service started
+2019-03-20 12:34:58.296+0000 INFO [c.n.c.d.SslHazelcastCoreTopologyService] Core topology changed {added=[{memberId=MemberId{e4975351}, info=CoreServerInfo{raftServer=onprem-neo4j-core-1.onprem-neo4j.default.svc.cluster.local:7000, catchupServer=onprem-neo4j-core-1.onprem-neo4j.default.svc.cluster.local:6000, clientConnectorAddresses=bolt://onprem-neo4j-core-1.onprem-neo4j.default.svc.cluster.local:7687,http://onprem-neo4j-core-1.onprem-neo4j.default.svc.cluster.local:7474,https://onprem-neo4j-core-1.onprem-neo4j.default.svc.cluster.local:7473, groups=[], database=default, refuseToBeLeader=false}}, {memberId=MemberId{128b41fc}, info=CoreServerInfo{raftServer=onprem-neo4j-core-0.onprem-neo4j.default.svc.cluster.local:7000, catchupServer=onprem-neo4j-core-0.onprem-neo4j.default.svc.cluster.local:6000, clientConnectorAddresses=bolt://onprem-neo4j-core-0.onprem-neo4j.default.svc.cluster.local:7687,http://onprem-neo4j-core-0.onprem-neo4j.default.svc.cluster.local:7474,https://onprem-neo4j-core-0.onprem-neo4j.default.svc.cluster.local:7473, groups=[], database=default, refuseToBeLeader=false}}, {memberId=MemberId{3c540cee}, info=CoreServerInfo{raftServer=onprem-neo4j-core-2.onprem-neo4j.default.svc.cluster.local:7000, catchupServer=onprem-neo4j-core-2.onprem-neo4j.default.svc.cluster.local:6000, clientConnectorAddresses=bolt://onprem-neo4j-core-2.onprem-neo4j.default.svc.cluster.local:7687,http://onprem-neo4j-core-2.onprem-neo4j.default.svc.cluster.local:7474,https://onprem-neo4j-core-2.onprem-neo4j.default.svc.cluster.local:7473, groups=[], database=default, refuseToBeLeader=false}}], removed=[]}
+2019-03-20 12:34:58.296+0000 INFO [o.n.c.c.c.m.RaftMembershipManager] Target membership: [MemberId{128b41fc}, MemberId{e4975351}, MemberId{3c540cee}]
+2019-03-20 12:34:58.427+0000 INFO [o.n.c.d.CoreMonitor] Discovered core member at 192.168.2.33:5000
+2019-03-20 12:34:58.450+0000 INFO [o.n.c.d.CoreMonitor] Discovered core member at 192.168.0.75:5000
+2019-03-20 12:34:58.547+0000 INFO [o.n.c.d.CoreMonitor] This instance bootstrapped the cluster.
+2019-03-20 12:34:58.548+0000 INFO [o.n.c.d.CoreMonitor] Bootstrapped with snapshot: CoreSnapshot{prevIndex=0, prevTerm=0, snapshotCollection={RAFT_CORE_STATE=RaftCoreState{committed=MembershipEntry{logIndex=0, members=[MemberId{128b41fc}, MemberId{e4975351}, MemberId{3c540cee}]}}, SESSION_TRACKER=GlobalSessionTrackerState{sessionTrackers={}, logIndex=-1}, ID_ALLOCATION=IdAllocationState{firstUnallocated=[0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 15, 1, 1, 1], logIndex=0}, LOCK_TOKEN=ReplicatedLockTokenState{currentToken=ReplicatedLockTokenRequest{owner=null, candidateId=-1}, ordinal=-1}}} and clusterId: ClusterId{uuid=89825083-56f6-4f6a-b707-a6b2c692d1bc}
+2019-03-20 12:34:58.842+0000 INFO [o.n.c.c.c.l.s.SegmentedRaftLog] Skipping from {index: -1, term: -1} to {index: 0, term: 0}
+2019-03-20 12:34:58.891+0000 INFO [o.n.c.c.s.LocalDatabase] Starting with storeId: Store{creationTime:1553085298514, randomId:-6094192098038682000, upgradeTime:1553085298514, upgradeId:1}
+2019-03-20 12:34:59.097+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Selected RecordFormat:StandardV3_4[v0.A.9] record format from store /data/databases/graph.db
+2019-03-20 12:34:59.119+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Selected RecordFormat:StandardV3_4[v0.A.9] record format from store /data/databases/graph.db
+2019-03-20 12:34:59.119+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Format not configured. Selected format from the store: RecordFormat:StandardV3_4[v0.A.9]
+2019-03-20 12:34:59.596+0000 INFO [o.n.k.i.i.l.NativeLabelScanStore] No label index found, this might just be first use. Preparing to rebuild.
+2019-03-20 12:34:59.634+0000 INFO [o.n.k.NeoStoreDataSource] No check point found in transaction log
+2019-03-20 12:34:59.635+0000 INFO [o.n.k.NeoStoreDataSource] Recovery required from position LogPosition{logVersion=0, byteOffset=16}
+2019-03-20 12:34:59.648+0000 INFO [o.n.k.r.Recovery]   10% completed
+2019-03-20 12:34:59.648+0000 INFO [o.n.k.r.Recovery]   20% completed
+2019-03-20 12:34:59.648+0000 INFO [o.n.k.r.Recovery]   30% completed
+2019-03-20 12:34:59.648+0000 INFO [o.n.k.r.Recovery]   40% completed
+2019-03-20 12:34:59.648+0000 INFO [o.n.k.r.Recovery]   50% completed
+2019-03-20 12:34:59.655+0000 INFO [o.n.k.r.Recovery]   60% completed
+2019-03-20 12:34:59.656+0000 INFO [o.n.k.r.Recovery]   70% completed
+2019-03-20 12:34:59.656+0000 INFO [o.n.k.r.Recovery]   80% completed
+2019-03-20 12:34:59.656+0000 INFO [o.n.k.r.Recovery]   90% completed
+2019-03-20 12:34:59.656+0000 INFO [o.n.k.r.Recovery]   100% completed
+2019-03-20 12:34:59.657+0000 INFO [o.n.k.NeoStoreDataSource] Recovery completed. 1 transactions, first:2, last:2 recovered
+2019-03-20 12:34:59.703+0000 INFO [o.n.k.i.s.DynamicArrayStore] Rebuilding id generator for[/data/databases/graph.db/neostore.nodestore.db.labels] ...
+2019-03-20 12:34:59.706+0000 INFO [o.n.k.i.s.DynamicArrayStore] [/data/databases/graph.db/neostore.nodestore.db.labels] high id=1 (defragged=0)
+2019-03-20 12:34:59.706+0000 INFO [o.n.k.i.s.DynamicArrayStore] /data/databases/graph.db/neostore.nodestore.db.labels rebuild id generator, highId=1 defragged count=0
+2019-03-20 12:34:59.706+0000 INFO [o.n.k.i.s.NodeStore] Rebuilding id generator for[/data/databases/graph.db/neostore.nodestore.db] ...
+2019-03-20 12:34:59.707+0000 INFO [o.n.k.i.s.NodeStore] [/data/databases/graph.db/neostore.nodestore.db] high id=0 (defragged=0)
+2019-03-20 12:34:59.707+0000 INFO [o.n.k.i.s.NodeStore] /data/databases/graph.db/neostore.nodestore.db rebuild id generator, highId=0 defragged count=0
+2019-03-20 12:34:59.707+0000 INFO [o.n.k.i.s.DynamicStringStore] Rebuilding id generator for[/data/databases/graph.db/neostore.propertystore.db.index.keys] ...
+2019-03-20 12:34:59.708+0000 INFO [o.n.k.i.s.DynamicStringStore] [/data/databases/graph.db/neostore.propertystore.db.index.keys] high id=1 (defragged=0)
+2019-03-20 12:34:59.709+0000 INFO [o.n.k.i.s.DynamicStringStore] /data/databases/graph.db/neostore.propertystore.db.index.keys rebuild id generator, highId=1 defragged count=0
+2019-03-20 12:34:59.709+0000 INFO [o.n.k.i.s.PropertyKeyTokenStore] Rebuilding id generator for[/data/databases/graph.db/neostore.propertystore.db.index] ...
+2019-03-20 12:34:59.710+0000 INFO [o.n.k.i.s.PropertyKeyTokenStore] [/data/databases/graph.db/neostore.propertystore.db.index] high id=0 (defragged=0)
+2019-03-20 12:34:59.710+0000 INFO [o.n.k.i.s.PropertyKeyTokenStore] /data/databases/graph.db/neostore.propertystore.db.index rebuild id generator, highId=0 defragged count=0
+2019-03-20 12:34:59.711+0000 INFO [o.n.k.i.s.DynamicStringStore] Rebuilding id generator for[/data/databases/graph.db/neostore.propertystore.db.strings] ...
+2019-03-20 12:34:59.711+0000 INFO [o.n.k.i.s.DynamicStringStore] [/data/databases/graph.db/neostore.propertystore.db.strings] high id=1 (defragged=0)
+2019-03-20 12:34:59.712+0000 INFO [o.n.k.i.s.DynamicStringStore] /data/databases/graph.db/neostore.propertystore.db.strings rebuild id generator, highId=1 defragged count=0
+2019-03-20 12:34:59.712+0000 INFO [o.n.k.i.s.DynamicArrayStore] Rebuilding id generator for[/data/databases/graph.db/neostore.propertystore.db.arrays] ...
+2019-03-20 12:34:59.713+0000 INFO [o.n.k.i.s.DynamicArrayStore] [/data/databases/graph.db/neostore.propertystore.db.arrays] high id=1 (defragged=0)
+2019-03-20 12:34:59.713+0000 INFO [o.n.k.i.s.DynamicArrayStore] /data/databases/graph.db/neostore.propertystore.db.arrays rebuild id generator, highId=1 defragged count=0
+2019-03-20 12:34:59.713+0000 INFO [o.n.k.i.s.PropertyStore] Rebuilding id generator for[/data/databases/graph.db/neostore.propertystore.db] ...
+2019-03-20 12:34:59.714+0000 INFO [o.n.k.i.s.PropertyStore] [/data/databases/graph.db/neostore.propertystore.db] high id=0 (defragged=0)
+2019-03-20 12:34:59.714+0000 INFO [o.n.k.i.s.PropertyStore] /data/databases/graph.db/neostore.propertystore.db rebuild id generator, highId=0 defragged count=0
+2019-03-20 12:34:59.714+0000 INFO [o.n.k.i.s.RelationshipStore] Rebuilding id generator for[/data/databases/graph.db/neostore.relationshipstore.db] ...
+2019-03-20 12:34:59.714+0000 INFO [o.n.k.i.s.RelationshipStore] [/data/databases/graph.db/neostore.relationshipstore.db] high id=0 (defragged=0)
+2019-03-20 12:34:59.715+0000 INFO [o.n.k.i.s.RelationshipStore] /data/databases/graph.db/neostore.relationshipstore.db rebuild id generator, highId=0 defragged count=0
+2019-03-20 12:34:59.715+0000 INFO [o.n.k.i.s.DynamicStringStore] Rebuilding id generator for[/data/databases/graph.db/neostore.relationshiptypestore.db.names] ...
+2019-03-20 12:34:59.716+0000 INFO [o.n.k.i.s.DynamicStringStore] [/data/databases/graph.db/neostore.relationshiptypestore.db.names] high id=1 (defragged=0)
+2019-03-20 12:34:59.716+0000 INFO [o.n.k.i.s.DynamicStringStore] /data/databases/graph.db/neostore.relationshiptypestore.db.names rebuild id generator, highId=1 defragged count=0
+2019-03-20 12:34:59.716+0000 INFO [o.n.k.i.s.RelationshipTypeTokenStore] Rebuilding id generator for[/data/databases/graph.db/neostore.relationshiptypestore.db] ...
+2019-03-20 12:34:59.717+0000 INFO [o.n.k.i.s.RelationshipTypeTokenStore] [/data/databases/graph.db/neostore.relationshiptypestore.db] high id=0 (defragged=0)
+2019-03-20 12:34:59.717+0000 INFO [o.n.k.i.s.RelationshipTypeTokenStore] /data/databases/graph.db/neostore.relationshiptypestore.db rebuild id generator, highId=0 defragged count=0
+2019-03-20 12:34:59.718+0000 INFO [o.n.k.i.s.DynamicStringStore] Rebuilding id generator for[/data/databases/graph.db/neostore.labeltokenstore.db.names] ...
+2019-03-20 12:34:59.719+0000 INFO [o.n.k.i.s.DynamicStringStore] [/data/databases/graph.db/neostore.labeltokenstore.db.names] high id=1 (defragged=0)
+2019-03-20 12:34:59.719+0000 INFO [o.n.k.i.s.DynamicStringStore] /data/databases/graph.db/neostore.labeltokenstore.db.names rebuild id generator, highId=1 defragged count=0
+2019-03-20 12:34:59.719+0000 INFO [o.n.k.i.s.LabelTokenStore] Rebuilding id generator for[/data/databases/graph.db/neostore.labeltokenstore.db] ...
+2019-03-20 12:34:59.720+0000 INFO [o.n.k.i.s.LabelTokenStore] [/data/databases/graph.db/neostore.labeltokenstore.db] high id=0 (defragged=0)
+2019-03-20 12:34:59.720+0000 INFO [o.n.k.i.s.LabelTokenStore] /data/databases/graph.db/neostore.labeltokenstore.db rebuild id generator, highId=0 defragged count=0
+2019-03-20 12:34:59.721+0000 INFO [o.n.k.i.s.SchemaStore] Rebuilding id generator for[/data/databases/graph.db/neostore.schemastore.db] ...
+2019-03-20 12:34:59.722+0000 INFO [o.n.k.i.s.SchemaStore] [/data/databases/graph.db/neostore.schemastore.db] high id=1 (defragged=0)
+2019-03-20 12:34:59.722+0000 INFO [o.n.k.i.s.SchemaStore] /data/databases/graph.db/neostore.schemastore.db rebuild id generator, highId=1 defragged count=0
+2019-03-20 12:34:59.722+0000 INFO [o.n.k.i.s.RelationshipGroupStore] Rebuilding id generator for[/data/databases/graph.db/neostore.relationshipgroupstore.db] ...
+2019-03-20 12:34:59.723+0000 INFO [o.n.k.i.s.RelationshipGroupStore] [/data/databases/graph.db/neostore.relationshipgroupstore.db] high id=1 (defragged=0)
+2019-03-20 12:34:59.723+0000 INFO [o.n.k.i.s.RelationshipGroupStore] /data/databases/graph.db/neostore.relationshipgroupstore.db rebuild id generator, highId=1 defragged count=0
+2019-03-20 12:34:59.723+0000 INFO [o.n.k.i.s.MetaDataStore] Rebuilding id generator for[/data/databases/graph.db/neostore] ...
+2019-03-20 12:34:59.724+0000 INFO [o.n.k.i.s.MetaDataStore] [/data/databases/graph.db/neostore] high id=15 (defragged=0)
+2019-03-20 12:34:59.724+0000 INFO [o.n.k.i.s.MetaDataStore] /data/databases/graph.db/neostore rebuild id generator, highId=15 defragged count=0
+2019-03-20 12:34:59.728+0000 WARN [o.n.k.i.s.MetaDataStore] Missing counts store, rebuilding it.
+2019-03-20 12:34:59.735+0000 WARN [o.n.k.i.s.MetaDataStore] Counts store rebuild completed.
+2019-03-20 12:34:59.755+0000 INFO [o.n.k.i.i.l.NativeLabelScanStore] Rebuilding label index, this may take a while
+2019-03-20 12:34:59.771+0000 INFO [o.n.k.i.i.l.NativeLabelScanStore] Label index rebuilt (roughly 0 nodes)
+2019-03-20 12:34:59.774+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2019-03-20 12:34:59.775+0000 INFO [o.n.i.d.DiagnosticsManager] Graph Database: enterprise core StoreId{creationTime=1553085298514, randomId=-6094192098038682000, storeVersion=16094931155187206, upgradeTime=1553085298514, upgradeId=1}
+2019-03-20 12:34:59.775+0000 INFO [o.n.i.d.DiagnosticsManager] Kernel version: 3.5.3,352576e6bd75ad8c1a0a8a43b3f5f7a0b3882410
+2019-03-20 12:34:59.775+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2019-03-20 12:34:59.778+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2019-03-20 12:34:59.778+0000 INFO [o.n.i.d.DiagnosticsManager] Store versions:
+2019-03-20 12:34:59.778+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore v0.A.9
+2019-03-20 12:34:59.778+0000 INFO [o.n.i.d.DiagnosticsManager]   NodeStore v0.A.9
+2019-03-20 12:34:59.778+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-03-20 12:34:59.778+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyIndexStore v0.A.9
+2019-03-20 12:34:59.779+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-03-20 12:34:59.779+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore v0.A.9
+2019-03-20 12:34:59.779+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyStore v0.A.9
+2019-03-20 12:34:59.779+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipStore v0.A.9
+2019-03-20 12:34:59.791+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-03-20 12:34:59.791+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipTypeStore v0.A.9
+2019-03-20 12:34:59.791+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-03-20 12:34:59.791+0000 INFO [o.n.i.d.DiagnosticsManager]   LabelTokenStore v0.A.9
+2019-03-20 12:34:59.791+0000 INFO [o.n.i.d.DiagnosticsManager]   SchemaStore v0.A.9
+2019-03-20 12:34:59.791+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipGroupStore v0.A.9
+2019-03-20 12:34:59.791+0000 INFO [o.n.i.d.DiagnosticsManager]   NeoStore v0.A.9
+2019-03-20 12:34:59.791+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2019-03-20 12:34:59.791+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2019-03-20 12:34:59.791+0000 INFO [o.n.i.d.DiagnosticsManager] Id usage:
+2019-03-20 12:34:59.792+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore: used=1 high=0
+2019-03-20 12:34:59.792+0000 INFO [o.n.i.d.DiagnosticsManager]   NodeStore: used=0 high=-1
+2019-03-20 12:34:59.792+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=1 high=0
+2019-03-20 12:34:59.792+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyIndexStore: used=0 high=-1
+2019-03-20 12:34:59.792+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=1 high=0
+2019-03-20 12:34:59.792+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore: used=1 high=0
+2019-03-20 12:34:59.792+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyStore: used=0 high=-1
+2019-03-20 12:34:59.792+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipStore: used=0 high=-1
+2019-03-20 12:34:59.792+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=1 high=0
+2019-03-20 12:34:59.792+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipTypeStore: used=0 high=-1
+2019-03-20 12:34:59.793+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=1 high=0
+2019-03-20 12:34:59.793+0000 INFO [o.n.i.d.DiagnosticsManager]   LabelTokenStore: used=0 high=-1
+2019-03-20 12:34:59.793+0000 INFO [o.n.i.d.DiagnosticsManager]   SchemaStore: used=1 high=0
+2019-03-20 12:34:59.793+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipGroupStore: used=1 high=0
+2019-03-20 12:34:59.793+0000 INFO [o.n.i.d.DiagnosticsManager]   NeoStore: used=15 high=14
+2019-03-20 12:34:59.793+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2019-03-20 12:34:59.793+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS START ---
+2019-03-20 12:34:59.793+0000 INFO [o.n.i.d.DiagnosticsManager] Neostore records:
+2019-03-20 12:34:59.794+0000 INFO [o.n.i.d.DiagnosticsManager] TIME (Creation time): 1553085298514
+2019-03-20 12:34:59.794+0000 INFO [o.n.i.d.DiagnosticsManager] RANDOM_NUMBER (Random number for store id): -6094192098038682000
+2019-03-20 12:34:59.794+0000 INFO [o.n.i.d.DiagnosticsManager] LOG_VERSION (Current log version): 0
+2019-03-20 12:34:59.794+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_ID (Last committed transaction): 2
+2019-03-20 12:34:59.794+0000 INFO [o.n.i.d.DiagnosticsManager] STORE_VERSION (Store format version): 16094931155187206
+2019-03-20 12:34:59.795+0000 INFO [o.n.i.d.DiagnosticsManager] FIRST_GRAPH_PROPERTY (First property record containing graph properties): -1
+2019-03-20 12:34:59.795+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CONSTRAINT_TRANSACTION (Last committed transaction containing constraint changes): 0
+2019-03-20 12:34:59.795+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_ID (Transaction id most recent upgrade was performed at): 1
+2019-03-20 12:34:59.795+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TIME (Time of last upgrade): 1553085298514
+2019-03-20 12:34:59.795+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_CHECKSUM (Checksum of last committed transaction): -159086174591
+2019-03-20 12:34:59.795+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_CHECKSUM (Checksum of transaction id the most recent upgrade was performed at): 0
+2019-03-20 12:34:59.795+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_VERSION (Log version where the last transaction commit entry has been written into): 0
+2019-03-20 12:34:59.795+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_BYTE_OFFSET (Byte offset in the log file where the last transaction commit entry has been written into): 72
+2019-03-20 12:34:59.795+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_COMMIT_TIMESTAMP (Commit time timestamp for last committed transaction): -1
+2019-03-20 12:34:59.795+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_COMMIT_TIMESTAMP (Commit timestamp of transaction the most recent upgrade was performed at): 0
+2019-03-20 12:34:59.795+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS END ---
+2019-03-20 12:34:59.796+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE START ---
+2019-03-20 12:34:59.796+0000 INFO [o.n.i.d.DiagnosticsManager] Transaction log:
+2019-03-20 12:34:59.797+0000 INFO [o.n.i.d.DiagnosticsManager] Oldest transaction 1 found in log with version 0
+2019-03-20 12:34:59.797+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE END ---
+2019-03-20 12:34:59.800+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2019-03-20 12:34:59.800+0000 INFO [o.n.i.d.DiagnosticsManager] Disk space on partition (Total / Free / Free %): 21003628544 / 20957097984 / 99
+2019-03-20 12:34:59.800+0000 INFO [o.n.i.d.DiagnosticsManager] Storage files: (filename : modification date - size)
+2019-03-20 12:34:59.803+0000 INFO [o.n.i.d.DiagnosticsManager]   index:
+2019-03-20 12:34:59.804+0000 INFO [o.n.i.d.DiagnosticsManager]   - Total: 2019-03-20T12:34:59+0000 - 0.00 B
+2019-03-20 12:34:59.804+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore: 2019-03-20T12:34:58+0000 - 8.00 kB
+2019-03-20 12:34:59.804+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.counts.db.a: 2019-03-20T12:34:59+0000 - 96.00 B
+2019-03-20 12:34:59.805+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.id: 2019-03-20T12:34:59+0000 - 9.00 B
+2019-03-20 12:34:59.805+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labelscanstore.db: 2019-03-20T12:34:59+0000 - 40.00 kB
+2019-03-20 12:34:59.805+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db: 2019-03-20T12:34:58+0000 - 0.00 B
+2019-03-20 12:34:59.805+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.id: 2019-03-20T12:34:59+0000 - 9.00 B
+2019-03-20 12:34:59.805+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.names: 2019-03-20T12:34:58+0000 - 8.00 kB
+2019-03-20 12:34:59.805+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.names.id: 2019-03-20T12:34:59+0000 - 9.00 B
+2019-03-20 12:34:59.806+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db: 2019-03-20T12:34:58+0000 - 0.00 B
+2019-03-20 12:34:59.806+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.id: 2019-03-20T12:34:59+0000 - 9.00 B
+2019-03-20 12:34:59.806+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.labels: 2019-03-20T12:34:58+0000 - 8.00 kB
+2019-03-20 12:34:59.806+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.labels.id: 2019-03-20T12:34:59+0000 - 9.00 B
+2019-03-20 12:34:59.806+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db: 2019-03-20T12:34:58+0000 - 0.00 B
+2019-03-20 12:34:59.807+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.arrays: 2019-03-20T12:34:58+0000 - 8.00 kB
+2019-03-20 12:34:59.807+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.arrays.id: 2019-03-20T12:34:59+0000 - 9.00 B
+2019-03-20 12:34:59.807+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.id: 2019-03-20T12:34:59+0000 - 9.00 B
+2019-03-20 12:34:59.807+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index: 2019-03-20T12:34:58+0000 - 0.00 B
+2019-03-20 12:34:59.807+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.id: 2019-03-20T12:34:59+0000 - 9.00 B
+2019-03-20 12:34:59.808+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.keys: 2019-03-20T12:34:58+0000 - 8.00 kB
+2019-03-20 12:34:59.808+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.keys.id: 2019-03-20T12:34:59+0000 - 9.00 B
+2019-03-20 12:34:59.808+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.strings: 2019-03-20T12:34:58+0000 - 8.00 kB
+2019-03-20 12:34:59.808+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.strings.id: 2019-03-20T12:34:59+0000 - 9.00 B
+2019-03-20 12:34:59.808+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipgroupstore.db: 2019-03-20T12:34:58+0000 - 8.00 kB
+2019-03-20 12:34:59.808+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipgroupstore.db.id: 2019-03-20T12:34:59+0000 - 9.00 B
+2019-03-20 12:34:59.809+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipstore.db: 2019-03-20T12:34:58+0000 - 0.00 B
+2019-03-20 12:34:59.809+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipstore.db.id: 2019-03-20T12:34:59+0000 - 9.00 B
+2019-03-20 12:34:59.809+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db: 2019-03-20T12:34:58+0000 - 0.00 B
+2019-03-20 12:34:59.809+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.id: 2019-03-20T12:34:59+0000 - 9.00 B
+2019-03-20 12:34:59.809+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.names: 2019-03-20T12:34:58+0000 - 8.00 kB
+2019-03-20 12:34:59.810+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.names.id: 2019-03-20T12:34:59+0000 - 9.00 B
+2019-03-20 12:34:59.810+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.schemastore.db: 2019-03-20T12:34:58+0000 - 8.00 kB
+2019-03-20 12:34:59.810+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.schemastore.db.id: 2019-03-20T12:34:59+0000 - 9.00 B
+2019-03-20 12:34:59.810+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.transaction.db.0: 2019-03-20T12:34:58+0000 - 72.00 B
+2019-03-20 12:34:59.810+0000 INFO [o.n.i.d.DiagnosticsManager] Storage summary: 
+2019-03-20 12:34:59.810+0000 INFO [o.n.i.d.DiagnosticsManager]   Total size of store: 112.30 kB
+2019-03-20 12:34:59.810+0000 INFO [o.n.i.d.DiagnosticsManager]   Total size of mapped files: 112.00 kB
+2019-03-20 12:34:59.811+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2019-03-20 12:34:59.811+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Fulfilling of requirement 'Database available' makes database graph.db available.
+2019-03-20 12:34:59.811+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Database graph.db is ready.
+2019-03-20 12:35:00.113+0000 INFO [o.n.k.i.DatabaseHealth] Database health set to OK
+2019-03-20 12:35:00.114+0000 INFO [o.n.k.i.p.PageCacheWarmer] Page cache warmup started.
+2019-03-20 12:35:00.115+0000 INFO [o.n.c.c.s.m.t.LastCommittedIndexFinder] Last transaction id in metadata store 2
+2019-03-20 12:35:00.116+0000 INFO [o.n.c.c.s.m.t.LastCommittedIndexFinder] Start id of last committed transaction in transaction log 1
+2019-03-20 12:35:00.117+0000 INFO [o.n.c.c.s.m.t.LastCommittedIndexFinder] Last committed transaction id in transaction log 2
+2019-03-20 12:35:00.117+0000 INFO [o.n.c.c.s.m.t.LastCommittedIndexFinder] Last committed consensus log index committed into tx log -1
+2019-03-20 12:35:00.117+0000 INFO [o.n.c.c.s.m.t.ReplicatedTransactionStateMachine] Updated lastCommittedIndex to -1
+2019-03-20 12:35:00.118+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] (Label) Updated lastCommittedIndex to -1
+2019-03-20 12:35:00.118+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] (RelationshipType) Updated lastCommittedIndex to -1
+2019-03-20 12:35:00.118+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] (PropertyKey) Updated lastCommittedIndex to -1
+2019-03-20 12:35:00.118+0000 INFO [o.n.c.c.s.CommandApplicationProcess] Restoring last applied index to 0
+2019-03-20 12:35:00.118+0000 INFO [o.n.c.c.s.CommandApplicationProcess] Resuming after startup (count = 0)
+2019-03-20 12:35:00.119+0000 INFO [o.n.k.i.p.PageCacheWarmer] Page cache warmup completed. 0 pages loaded. Duration: 5ms.
+2019-03-20 12:35:00.128+0000 INFO [o.n.c.n.Server] catchup-server: bound to 0.0.0.0:6000
+2019-03-20 12:35:00.132+0000 INFO [o.n.c.n.Server] backup-server: bound to 0.0.0.0:6362
+2019-03-20 12:35:10.691+0000 INFO [o.n.c.c.c.RaftMachine] Election timeout triggered
+2019-03-20 12:35:10.694+0000 INFO [o.n.c.c.c.RaftMachine] Election started with vote request: Vote.Request from MemberId{e4975351} {term=1, candidate=MemberId{e4975351}, lastAppended=0, lastLogTerm=0} and members: [MemberId{128b41fc}, MemberId{e4975351}, MemberId{3c540cee}]
+2019-03-20 12:35:10.694+0000 INFO [o.n.c.c.c.RaftMachine] Moving to CANDIDATE state after successfully starting election
+2019-03-20 12:35:10.793+0000 INFO [o.n.c.m.SenderService] Creating channel to: [onprem-neo4j-core-0.onprem-neo4j.default.svc.cluster.local:7000] 
+2019-03-20 12:35:10.797+0000 INFO [o.n.c.m.SenderService] Creating channel to: [onprem-neo4j-core-2.onprem-neo4j.default.svc.cluster.local:7000] 
+2019-03-20 12:35:10.836+0000 INFO [o.n.c.m.SenderService] Connected: [id: 0xbd6ace61, L:/192.168.1.20:37028 - R:onprem-neo4j-core-0.onprem-neo4j.default.svc.cluster.local/192.168.2.33:7000]
+2019-03-20 12:35:10.836+0000 INFO [o.n.c.m.SenderService] Connected: [id: 0xffaf470d, L:/192.168.1.20:57820 - R:onprem-neo4j-core-2.onprem-neo4j.default.svc.cluster.local/192.168.0.75:7000]
+2019-03-20 12:35:10.839+0000 INFO [o.n.c.p.h.HandshakeClientInitializer] Initiating handshake local /192.168.1.20:37028 remote onprem-neo4j-core-0.onprem-neo4j.default.svc.cluster.local/192.168.2.33:7000
+2019-03-20 12:35:10.839+0000 INFO [o.n.c.p.h.HandshakeClientInitializer] Initiating handshake local /192.168.1.20:57820 remote onprem-neo4j-core-2.onprem-neo4j.default.svc.cluster.local/192.168.0.75:7000
+2019-03-20 12:35:10.962+0000 INFO [o.n.c.p.h.HandshakeClientInitializer] Connected to onprem-neo4j-core-2.onprem-neo4j.default.svc.cluster.local/192.168.0.75:7000 [raft version:2]
+2019-03-20 12:35:10.962+0000 INFO [o.n.c.p.h.HandshakeClientInitializer] Connected to onprem-neo4j-core-0.onprem-neo4j.default.svc.cluster.local/192.168.2.33:7000 [raft version:2]
+2019-03-20 12:35:10.963+0000 INFO [o.n.c.p.h.HandshakeClientInitializer] Installing raft version:2
+2019-03-20 12:35:10.963+0000 INFO [o.n.c.p.h.HandshakeClientInitializer] Installing raft version:2
+2019-03-20 12:35:11.007+0000 INFO [o.n.c.p.h.HandshakeServerInitializer] Installing handshake server local /192.168.1.20:7000 remote /192.168.0.75:39216
+2019-03-20 12:35:11.026+0000 INFO [o.n.c.p.h.HandshakeServerInitializer] Installing handshake server local /192.168.1.20:7000 remote /192.168.2.33:41628
+2019-03-20 12:35:11.089+0000 INFO [o.n.c.c.c.RaftMachine] Moving to LEADER state at term 1 (I am MemberId{e4975351}), voted for by [MemberId{3c540cee}]
+2019-03-20 12:35:11.090+0000 INFO [o.n.c.c.c.s.RaftState] First leader elected: MemberId{e4975351}
+2019-03-20 12:35:11.099+0000 INFO [o.n.c.c.c.s.RaftLogShipper] Starting log shipper: MemberId{128b41fc}[matchIndex: -1, lastSentIndex: 0, localAppendIndex: 1, mode: MISMATCH]
+2019-03-20 12:35:11.102+0000 INFO [o.n.c.c.c.s.RaftLogShipper] Starting log shipper: MemberId{3c540cee}[matchIndex: -1, lastSentIndex: 0, localAppendIndex: 1, mode: MISMATCH]
+2019-03-20 12:35:11.104+0000 INFO [o.n.c.c.c.m.RaftMembershipChanger] Idle{}
+2019-03-20 12:35:11.105+0000 INFO [o.n.c.c.r.RaftReplicator] A new leader has been detected: 'MemberId{e4975351}'
+2019-03-20 12:35:11.105+0000 INFO [c.n.c.d.SslHazelcastCoreTopologyService] Leader MemberId{e4975351} updating leader info for database default and term 1
+2019-03-20 12:35:11.134+0000 INFO [o.n.c.p.h.HandshakeServerInitializer] Installing handshake server local /192.168.1.20:6000 remote /192.168.0.75:55776
+2019-03-20 12:35:11.144+0000 INFO [o.n.c.p.h.HandshakeServerInitializer] Installing handshake server local /192.168.1.20:6000 remote /192.168.2.33:33822
+2019-03-20 12:35:11.173+0000 INFO [o.n.c.c.s.CommandApplicationProcess] Pausing due to snapshot request (count = 1)
+2019-03-20 12:35:11.174+0000 INFO [o.n.c.c.s.CommandApplicationProcess] Resuming after snapshot request (count = 0)
+2019-03-20 12:35:11.177+0000 INFO [o.n.c.c.s.CommandApplicationProcess] Pausing due to snapshot request (count = 1)
+2019-03-20 12:35:11.177+0000 INFO [o.n.c.c.s.CommandApplicationProcess] Resuming after snapshot request (count = 0)
+2019-03-20 12:35:11.213+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by Store copy @ txId: 2 checkpoint started...
+2019-03-20 12:35:11.231+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by Store copy @ txId: 2 checkpoint completed in 18ms
+2019-03-20 12:35:11.232+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-03-20 12:35:18.104+0000 INFO [o.n.c.c.c.s.RaftLogShipper] MemberId{128b41fc}[matchIndex: 0, lastSentIndex: 1, localAppendIndex: 1, mode: MISMATCH]: caught up after mismatch, moving to PIPELINE mode
+2019-03-20 12:35:18.191+0000 INFO [o.n.c.c.c.s.RaftLogShipper] MemberId{3c540cee}[matchIndex: 0, lastSentIndex: 1, localAppendIndex: 1, mode: MISMATCH]: caught up after mismatch, moving to PIPELINE mode
+2019-03-20 12:35:28.194+0000 INFO [o.n.c.d.CoreMonitor] Waiting to catchup with leader... we are 0 entries behind leader at 1.
+2019-03-20 12:35:28.194+0000 INFO [o.n.c.d.CoreMonitor] Successfully joined the Raft group.
+2019-03-20 12:35:28.295+0000 WARN [o.n.k.i.p.Procedures] Failed to load `apoc.util.s3.S3URLConnection` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: com/amazonaws/ClientConfiguration
+2019-03-20 12:35:28.296+0000 WARN [o.n.k.i.p.Procedures] Failed to load `apoc.util.s3.S3Aws` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: com/amazonaws/auth/AWSCredentials
+2019-03-20 12:35:28.297+0000 WARN [o.n.k.i.p.Procedures] Failed to load `apoc.util.s3.S3Aws$1` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: com/amazonaws/services/s3/model/S3ObjectInputStream
+2019-03-20 12:35:28.305+0000 WARN [o.n.k.i.p.Procedures] Failed to load `apoc.util.hdfs.HDFSUtils$1` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/apache/hadoop/fs/FSDataInputStream
+2019-03-20 12:35:28.305+0000 WARN [o.n.k.i.p.Procedures] Failed to load `apoc.util.hdfs.HDFSUtils` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/apache/hadoop/fs/FSDataOutputStream
+2019-03-20 12:35:28.498+0000 WARN [o.n.k.i.p.Procedures] Failed to load `apoc.mongodb.MongoDBColl` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/bson/conversions/Bson
+2019-03-20 12:35:28.610+0000 WARN [o.n.k.i.p.Procedures] Failed to load `apoc.load.LoadXls` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/apache/poi/ss/usermodel/Row
+2019-03-20 12:35:29.015+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=216, gcTime=220, gcCount=2}
+2019-03-20 12:35:29.060+0000 WARN [o.n.k.i.p.Procedures] Failed to load `apoc.data.email.ExtractEmail` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: javax/mail/internet/AddressException
+2019-03-20 12:35:29.124+0000 WARN [o.n.k.i.p.Procedures] Failed to load `apoc.couchbase.CouchbaseManager` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: com/couchbase/client/java/env/CouchbaseEnvironment
+2019-03-20 12:35:29.125+0000 WARN [o.n.k.i.p.Procedures] Failed to load `apoc.couchbase.CouchbaseConnection` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: com/couchbase/client/java/document/Document
+2019-03-20 12:35:29.126+0000 WARN [o.n.k.i.p.Procedures] Failed to load `apoc.couchbase.document.CouchbaseUtils` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: com/couchbase/client/core/message/kv/MutationToken
+2019-03-20 12:35:29.303+0000 WARN [o.n.k.i.p.Procedures] Failed to load `com.jayway.jsonpath.spi.json.GsonJsonProvider` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: com/google/gson/JsonElement
+2019-03-20 12:35:29.305+0000 WARN [o.n.k.i.p.Procedures] Failed to load `com.jayway.jsonpath.spi.json.JsonOrgJsonProvider` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/json/JSONException
+2019-03-20 12:35:29.309+0000 WARN [o.n.k.i.p.Procedures] Failed to load `com.jayway.jsonpath.spi.mapper.GsonMappingProvider$1` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: com/google/gson/Gson
+2019-03-20 12:35:29.310+0000 WARN [o.n.k.i.p.Procedures] Failed to load `com.jayway.jsonpath.spi.mapper.GsonMappingProvider$2` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: com/google/gson/Gson
+2019-03-20 12:35:29.547+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.ConscryptAlpnSslEngine` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/conscrypt/BufferAllocator
+2019-03-20 12:35:29.548+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.ReferenceCountedOpenSslServerContext$TrustManagerVerifyCallback` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/neo4j/driver/internal/shaded/io/netty/internal/tcnative/CertificateVerifier
+2019-03-20 12:35:29.565+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.ReferenceCountedOpenSslClientContext$ExtendedTrustManagerVerifyCallback` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/neo4j/driver/internal/shaded/io/netty/internal/tcnative/CertificateVerifier
+2019-03-20 12:35:29.566+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.JettyNpnSslEngine` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/eclipse/jetty/npn/NextProtoNego$Provider
+2019-03-20 12:35:29.567+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.JettyAlpnSslEngine$ClientEngine$1` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/eclipse/jetty/alpn/ALPN$ClientProvider
+2019-03-20 12:35:29.570+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.JettyAlpnSslEngine$ClientEngine` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/eclipse/jetty/alpn/ALPN$Provider
+2019-03-20 12:35:29.571+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.OpenSslKeyMaterialManager` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/neo4j/driver/internal/shaded/io/netty/internal/tcnative/CertificateRequestedCallback$KeyMaterial
+2019-03-20 12:35:29.574+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.JettyAlpnSslEngine$ServerEngine` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/eclipse/jetty/alpn/ALPN$Provider
+2019-03-20 12:35:29.575+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.ReferenceCountedOpenSslClientContext$OpenSslCertificateRequestedCallback` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/neo4j/driver/internal/shaded/io/netty/internal/tcnative/CertificateRequestedCallback
+2019-03-20 12:35:29.599+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.ConscryptAlpnSslEngine$ClientEngine$1` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/conscrypt/HandshakeListener
+2019-03-20 12:35:29.600+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.ReferenceCountedOpenSslClientContext$TrustManagerVerifyCallback` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/neo4j/driver/internal/shaded/io/netty/internal/tcnative/CertificateVerifier
+2019-03-20 12:35:29.603+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.ReferenceCountedOpenSslServerContext` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/neo4j/driver/internal/shaded/io/netty/internal/tcnative/CertificateVerifier
+2019-03-20 12:35:29.607+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.JettyNpnSslEngine$1` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/eclipse/jetty/npn/NextProtoNego$ServerProvider
+2019-03-20 12:35:29.612+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.ConscryptAlpnSslEngine$ServerEngine$1` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/conscrypt/HandshakeListener
+2019-03-20 12:35:29.620+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.JettyNpnSslEngine$2` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/eclipse/jetty/npn/NextProtoNego$ClientProvider
+2019-03-20 12:35:29.626+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.ConscryptAlpnSslEngine$BufferAllocatorAdapter` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/conscrypt/BufferAllocator
+2019-03-20 12:35:29.628+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.ConscryptAlpnSslEngine$ClientEngine` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/conscrypt/BufferAllocator
+2019-03-20 12:35:29.651+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.ReferenceCountedOpenSslServerContext$OpenSslSniHostnameMatcher` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/neo4j/driver/internal/shaded/io/netty/internal/tcnative/SniHostNameMatcher
+2019-03-20 12:35:29.653+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.ReferenceCountedOpenSslServerContext$ExtendedTrustManagerVerifyCallback` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/neo4j/driver/internal/shaded/io/netty/internal/tcnative/CertificateVerifier
+2019-03-20 12:35:29.654+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.ConscryptAlpnSslEngine$ServerEngine` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/conscrypt/BufferAllocator
+2019-03-20 12:35:29.666+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.ReferenceCountedOpenSslClientContext` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/neo4j/driver/internal/shaded/io/netty/internal/tcnative/CertificateRequestedCallback
+2019-03-20 12:35:29.668+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.ConscryptAlpnSslEngine$BufferAdapter` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/conscrypt/AllocatedBuffer
+2019-03-20 12:35:29.677+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.ReferenceCountedOpenSslContext$AbstractCertificateVerifier` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/neo4j/driver/internal/shaded/io/netty/internal/tcnative/CertificateVerifier
+2019-03-20 12:35:29.688+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.ssl.JettyAlpnSslEngine$ServerEngine$1` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/eclipse/jetty/alpn/ALPN$ServerProvider
+2019-03-20 12:35:29.817+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.util.internal.logging.Log4JLogger` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/apache/log4j/Priority
+2019-03-20 12:35:29.929+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.util.internal.logging.Log4J2Logger` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/apache/logging/log4j/spi/ExtendedLoggerWrapper
+2019-03-20 12:35:30.269+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.codec.marshalling.MarshallerProvider` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/jboss/marshalling/Marshaller
+2019-03-20 12:35:30.302+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.codec.marshalling.MarshallingEncoder` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/jboss/marshalling/ByteOutput
+2019-03-20 12:35:30.303+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.codec.protobuf.ProtobufEncoderNano` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: com/google/protobuf/nano/MessageNano
+2019-03-20 12:35:30.304+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.codec.marshalling.CompatibleMarshallingEncoder` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/jboss/marshalling/ByteOutput
+2019-03-20 12:35:30.304+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.codec.marshalling.UnmarshallerProvider` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/jboss/marshalling/Unmarshaller
+2019-03-20 12:35:30.305+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.codec.marshalling.ContextBoundUnmarshallerProvider` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/jboss/marshalling/Unmarshaller
+2019-03-20 12:35:30.305+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.codec.marshalling.DefaultUnmarshallerProvider` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/jboss/marshalling/Unmarshaller
+2019-03-20 12:35:30.306+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.codec.marshalling.ThreadLocalUnmarshallerProvider` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/jboss/marshalling/Unmarshaller
+2019-03-20 12:35:30.330+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.codec.compression.ZlibUtil` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: com/jcraft/jzlib/JZlib$WrapperType
+2019-03-20 12:35:30.338+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.codec.marshalling.LimitingByteInput` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/jboss/marshalling/ByteInput
+2019-03-20 12:35:30.338+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.codec.marshalling.MarshallingDecoder` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/jboss/marshalling/ByteInput
+2019-03-20 12:35:30.339+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.codec.marshalling.ChannelBufferByteInput` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/jboss/marshalling/ByteInput
+2019-03-20 12:35:30.381+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.codec.protobuf.ProtobufDecoder` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: com/google/protobuf/ExtensionRegistryLite
+2019-03-20 12:35:30.381+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.codec.marshalling.ChannelBufferByteOutput` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/jboss/marshalling/ByteOutput
+2019-03-20 12:35:30.382+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.codec.protobuf.ProtobufEncoder` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: com/google/protobuf/MessageLiteOrBuilder
+2019-03-20 12:35:30.384+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.codec.marshalling.CompatibleMarshallingDecoder` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/jboss/marshalling/ByteInput
+2019-03-20 12:35:30.385+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.codec.marshalling.ThreadLocalMarshallerProvider` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/jboss/marshalling/Marshaller
+2019-03-20 12:35:30.385+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.neo4j.driver.internal.shaded.io.netty.handler.codec.marshalling.DefaultMarshallerProvider` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/jboss/marshalling/Marshaller
+2019-03-20 12:35:30.474+0000 WARN [o.n.k.i.p.Procedures] Failed to load `com.novell.ldap.DsmlConnection` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/apache/commons/httpclient/HttpException
+2019-03-20 12:35:30.562+0000 WARN [o.n.k.i.p.Procedures] Failed to load `com.novell.ldap.LDAPSecureSocketFactory` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: com/novell/service/security/net/SecureSocket
+2019-03-20 12:35:30.584+0000 WARN [o.n.k.i.p.Procedures] Failed to load `com.novell.ldap.spml.NoAuthImpl` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/openspml/client/SpmlClient
+2019-03-20 12:35:30.584+0000 WARN [o.n.k.i.p.Procedures] Failed to load `com.novell.ldap.spml.SPMLImpl` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/openspml/client/SpmlClient
+2019-03-20 12:35:30.585+0000 WARN [o.n.k.i.p.Procedures] Failed to load `com.novell.ldap.spml.SunIdm` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/openspml/client/SpmlClient
+2019-03-20 12:35:30.587+0000 WARN [o.n.k.i.p.Procedures] Failed to load `com.novell.ldap.SPMLConnection` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/openspml/util/SpmlException
+2019-03-20 12:35:30.603+0000 WARN [o.n.k.i.p.Procedures] Failed to load `com.novell.ldap.util.HttpRequestCallback` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/apache/commons/httpclient/methods/PostMethod
+2019-03-20 12:35:30.614+0000 WARN [o.n.k.i.p.Procedures] Failed to load `com.novell.sasl.client.NMASSaslClient$NmasLdapTransport` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: com/novell/security/nmas/transport/NMASTransport
+2019-03-20 12:35:30.615+0000 WARN [o.n.k.i.p.Procedures] Failed to load `com.novell.sasl.client.NMASSaslClient` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: com/novell/security/nmas/transport/MAFTransportException
+2019-03-20 12:35:33.330+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.apache.commons.logging.impl.AvalonLogger` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/apache/avalon/framework/logger/Logger
+2019-03-20 12:35:33.332+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.apache.commons.logging.impl.Log4JLogger` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/apache/log4j/Category
+2019-03-20 12:35:33.339+0000 WARN [o.n.k.i.p.Procedures] Failed to load `org.apache.commons.logging.impl.LogKitLogger` from plugin jar `/plugins/apoc-3.5.0.1-all.jar`: org/apache/log/Logger
+2019-03-20 12:35:34.618+0000 INFO [o.n.m.MetricsExtension] Sending metrics to CSV file at /var/lib/neo4j/metrics
+2019-03-20 12:35:35.594+0000 INFO [o.n.b.BoltServer] Bolt server loaded
+2019-03-20 12:35:35.642+0000 INFO [o.n.b.BoltServer] Bolt enabled on 0.0.0.0:7687.
+2019-03-20 12:35:36.313+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=266, gcTime=320, gcCount=2}
+2019-03-20 12:35:37.646+0000 WARN [o.n.m.s.s.ServerMetrics] Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2019-03-20 12:35:37.649+0000 WARN [o.n.m.s.s.ServerMetrics] Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2019-03-20 12:35:38.716+0000 INFO [o.n.i.d.DiagnosticsManager] --- SERVER STARTED START ---
+2019-03-20 12:35:39.032+0000 INFO [o.n.m.s.s.ServerMetrics] Server thread metrics have been registered successfully
+2019-03-20 12:35:40.128+0000 INFO [o.n.i.d.DiagnosticsManager] --- SERVER STARTED END ---
+2019-03-20 12:35:42.354+0000 INFO [o.n.c.m.SenderService] Creating channel to: [onprem-neo4j-core-1.onprem-neo4j.default.svc.cluster.local:7000] 
+2019-03-20 12:35:42.355+0000 INFO [o.n.c.m.SenderService] Connected: [id: 0x03dbdef5, L:/192.168.1.20:37574 - R:onprem-neo4j-core-1.onprem-neo4j.default.svc.cluster.local/192.168.1.20:7000]
+2019-03-20 12:35:42.356+0000 INFO [o.n.c.p.h.HandshakeClientInitializer] Initiating handshake local /192.168.1.20:37574 remote onprem-neo4j-core-1.onprem-neo4j.default.svc.cluster.local/192.168.1.20:7000
+2019-03-20 12:35:42.356+0000 INFO [o.n.c.p.h.HandshakeServerInitializer] Installing handshake server local /192.168.1.20:7000 remote /192.168.1.20:37574
+2019-03-20 12:35:42.358+0000 INFO [o.n.c.p.h.HandshakeClientInitializer] Connected to onprem-neo4j-core-1.onprem-neo4j.default.svc.cluster.local/192.168.1.20:7000 [raft version:2]
+2019-03-20 12:35:42.358+0000 INFO [o.n.c.p.h.HandshakeClientInitializer] Installing raft version:2
+2019-03-20 12:35:42.442+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='LABEL', name='Member'} with newTokenId=0
+2019-03-20 12:35:42.509+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='PROPERTY', name='id'} with newTokenId=0
+2019-03-20 12:35:42.658+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Member(id) [provider: {key=native-btree, version=1.0}]]
+2019-03-20 12:35:42.696+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='LABEL', name='Event'} with newTokenId=1
+2019-03-20 12:35:42.713+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Event(id) [provider: {key=native-btree, version=1.0}]]
+2019-03-20 12:35:42.725+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@40fe7074[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], batchedUpdates = [0 updates], queuedUpdates = 0}
+2019-03-20 12:35:42.737+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='PROPERTY', name='time'} with newTokenId=1
+2019-03-20 12:35:42.738+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@d6dbc18[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], batchedUpdates = [0 updates], queuedUpdates = 0}
+2019-03-20 12:35:42.753+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Event(time) [provider: {key=native-btree, version=1.0}]]
+2019-03-20 12:35:42.824+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='PROPERTY', name='location'} with newTokenId=2
+2019-03-20 12:35:42.826+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@584520e4[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], batchedUpdates = [0 updates], queuedUpdates = 0}
+2019-03-20 12:35:42.832+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index creation finished. Index [:Event(id) [provider: {key=native-btree, version=1.0}]] is ONLINE.
+2019-03-20 12:35:42.832+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index creation finished. Index [:Member(id) [provider: {key=native-btree, version=1.0}]] is ONLINE.
+2019-03-20 12:35:42.834+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] TIME/PHASE Final: SCAN[nbrOfReports=0], WRITE[totalTime=43ms, avgTime=43ms, minTime=0ns, maxTime=43ms, nbrOfReports=1], FLIP[totalTime=87ms, avgTime=87ms, minTime=0ns, maxTime=87ms, nbrOfReports=1]
+2019-03-20 12:35:42.834+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] TIME/PHASE Final: SCAN[nbrOfReports=0], WRITE[totalTime=41ms, avgTime=41ms, minTime=0ns, maxTime=41ms, nbrOfReports=1], FLIP[totalTime=73ms, avgTime=73ms, minTime=0ns, maxTime=73ms, nbrOfReports=1]
+2019-03-20 12:35:42.834+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@40fe7074[Running, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 2], batchedUpdates = [], queuedUpdates = 0}
+2019-03-20 12:35:42.834+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@d6dbc18[Running, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 2], batchedUpdates = [], queuedUpdates = 0}
+2019-03-20 12:35:42.840+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Event(location) [provider: {key=native-btree, version=1.0}]]
+2019-03-20 12:35:42.897+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index creation finished. Index [:Event(time) [provider: {key=native-btree, version=1.0}]] is ONLINE.
+2019-03-20 12:35:42.897+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] TIME/PHASE Final: SCAN[nbrOfReports=0], WRITE[totalTime=86ms, avgTime=86ms, minTime=0ns, maxTime=86ms, nbrOfReports=1], FLIP[totalTime=6ms, avgTime=6ms, minTime=0ns, maxTime=6ms, nbrOfReports=1]
+2019-03-20 12:35:42.898+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@584520e4[Running, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 2], batchedUpdates = [], queuedUpdates = 0}
+2019-03-20 12:35:42.918+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@65d70a5b[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], batchedUpdates = [0 updates], queuedUpdates = 0}
+2019-03-20 12:35:42.920+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='LABEL', name='Group'} with newTokenId=2
+2019-03-20 12:35:42.931+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Group(id) [provider: {key=native-btree, version=1.0}]]
+2019-03-20 12:35:42.943+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index creation finished. Index [:Event(location) [provider: {key=native-btree, version=1.0}]] is ONLINE.
+2019-03-20 12:35:42.943+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] TIME/PHASE Final: SCAN[nbrOfReports=0], WRITE[totalTime=41ms, avgTime=41ms, minTime=0ns, maxTime=41ms, nbrOfReports=1], FLIP[totalTime=5ms, avgTime=5ms, minTime=0ns, maxTime=5ms, nbrOfReports=1]
+2019-03-20 12:35:42.943+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@65d70a5b[Running, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 2], batchedUpdates = [], queuedUpdates = 0}
+2019-03-20 12:35:42.991+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Group(location) [provider: {key=native-btree, version=1.0}]]
+2019-03-20 12:35:42.991+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@5918ed40[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], batchedUpdates = [0 updates], queuedUpdates = 0}
+2019-03-20 12:35:43.010+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='LABEL', name='Venue'} with newTokenId=3
+2019-03-20 12:35:43.014+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@238b40c5[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], batchedUpdates = [0 updates], queuedUpdates = 0}
+2019-03-20 12:35:43.014+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index creation finished. Index [:Group(id) [provider: {key=native-btree, version=1.0}]] is ONLINE.
+2019-03-20 12:35:43.014+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] TIME/PHASE Final: SCAN[nbrOfReports=0], WRITE[totalTime=75ms, avgTime=75ms, minTime=0ns, maxTime=75ms, nbrOfReports=1], FLIP[totalTime=3ms, avgTime=3ms, minTime=0ns, maxTime=3ms, nbrOfReports=1]
+2019-03-20 12:35:43.014+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@5918ed40[Running, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 2], batchedUpdates = [], queuedUpdates = 0}
+2019-03-20 12:35:43.023+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Venue(id) [provider: {key=native-btree, version=1.0}]]
+2019-03-20 12:35:43.040+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index creation finished. Index [:Group(location) [provider: {key=native-btree, version=1.0}]] is ONLINE.
+2019-03-20 12:35:43.041+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] TIME/PHASE Final: SCAN[nbrOfReports=0], WRITE[totalTime=41ms, avgTime=41ms, minTime=0ns, maxTime=41ms, nbrOfReports=1], FLIP[totalTime=6ms, avgTime=6ms, minTime=0ns, maxTime=6ms, nbrOfReports=1]
+2019-03-20 12:35:43.041+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@238b40c5[Running, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 2], batchedUpdates = [], queuedUpdates = 0}
+2019-03-20 12:35:43.047+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@7957d590[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], batchedUpdates = [0 updates], queuedUpdates = 0}
+2019-03-20 12:35:43.048+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Venue(location) [provider: {key=native-btree, version=1.0}]]
+2019-03-20 12:35:43.068+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='LABEL', name='RSVP'} with newTokenId=4
+2019-03-20 12:35:43.073+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@26c6adc6[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], batchedUpdates = [0 updates], queuedUpdates = 0}
+2019-03-20 12:35:43.094+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index creation finished. Index [:Venue(id) [provider: {key=native-btree, version=1.0}]] is ONLINE.
+2019-03-20 12:35:43.094+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] TIME/PHASE Final: SCAN[nbrOfReports=0], WRITE[totalTime=41ms, avgTime=41ms, minTime=0ns, maxTime=41ms, nbrOfReports=1], FLIP[totalTime=26ms, avgTime=26ms, minTime=0ns, maxTime=26ms, nbrOfReports=1]
+2019-03-20 12:35:43.094+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@7957d590[Running, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 2], batchedUpdates = [], queuedUpdates = 0}
+2019-03-20 12:35:43.099+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:RSVP(id) [provider: {key=native-btree, version=1.0}]]
+2019-03-20 12:35:43.116+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index creation finished. Index [:Venue(location) [provider: {key=native-btree, version=1.0}]] is ONLINE.
+2019-03-20 12:35:43.116+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] TIME/PHASE Final: SCAN[nbrOfReports=0], WRITE[totalTime=60ms, avgTime=60ms, minTime=0ns, maxTime=60ms, nbrOfReports=1], FLIP[totalTime=4ms, avgTime=4ms, minTime=0ns, maxTime=4ms, nbrOfReports=1]
+2019-03-20 12:35:43.116+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@26c6adc6[Running, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 2], batchedUpdates = [], queuedUpdates = 0}
+2019-03-20 12:35:43.125+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@3a2561ef[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], batchedUpdates = [0 updates], queuedUpdates = 0}
+2019-03-20 12:35:43.130+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='LABEL', name='Topic'} with newTokenId=5
+2019-03-20 12:35:43.136+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='PROPERTY', name='urlkey'} with newTokenId=3
+2019-03-20 12:35:43.145+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Topic(urlkey) [provider: {key=native-btree, version=1.0}]]
+2019-03-20 12:35:43.149+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index creation finished. Index [:RSVP(id) [provider: {key=native-btree, version=1.0}]] is ONLINE.
+2019-03-20 12:35:43.149+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] TIME/PHASE Final: SCAN[nbrOfReports=0], WRITE[totalTime=41ms, avgTime=41ms, minTime=0ns, maxTime=41ms, nbrOfReports=1], FLIP[totalTime=4ms, avgTime=4ms, minTime=0ns, maxTime=4ms, nbrOfReports=1]
+2019-03-20 12:35:43.149+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@3a2561ef[Running, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 2], batchedUpdates = [], queuedUpdates = 0}
+2019-03-20 12:35:43.170+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@1902cc03[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], batchedUpdates = [0 updates], queuedUpdates = 0}
+2019-03-20 12:35:43.198+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='LABEL', name='City'} with newTokenId=6
+2019-03-20 12:35:43.205+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='PROPERTY', name='name'} with newTokenId=4
+2019-03-20 12:35:43.216+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index creation finished. Index [:Topic(urlkey) [provider: {key=native-btree, version=1.0}]] is ONLINE.
+2019-03-20 12:35:43.216+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] TIME/PHASE Final: SCAN[nbrOfReports=0], WRITE[totalTime=64ms, avgTime=64ms, minTime=0ns, maxTime=64ms, nbrOfReports=1], FLIP[totalTime=4ms, avgTime=4ms, minTime=0ns, maxTime=4ms, nbrOfReports=1]
+2019-03-20 12:35:43.216+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@1902cc03[Running, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 2], batchedUpdates = [], queuedUpdates = 0}
+2019-03-20 12:35:43.220+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:City(name) [provider: {key=native-btree, version=1.0}]]
+2019-03-20 12:35:43.243+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:City(location) [provider: {key=native-btree, version=1.0}]]
+2019-03-20 12:35:43.244+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@dc334d1[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], batchedUpdates = [0 updates], queuedUpdates = 0}
+2019-03-20 12:35:43.262+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='PROPERTY', name='population'} with newTokenId=5
+2019-03-20 12:35:43.291+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@5cbd35d8[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], batchedUpdates = [0 updates], queuedUpdates = 0}
+2019-03-20 12:35:43.294+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index creation finished. Index [:City(name) [provider: {key=native-btree, version=1.0}]] is ONLINE.
+2019-03-20 12:35:43.294+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] TIME/PHASE Final: SCAN[nbrOfReports=0], WRITE[totalTime=67ms, avgTime=67ms, minTime=0ns, maxTime=67ms, nbrOfReports=1], FLIP[totalTime=3ms, avgTime=3ms, minTime=0ns, maxTime=3ms, nbrOfReports=1]
+2019-03-20 12:35:43.294+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@dc334d1[Running, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 2], batchedUpdates = [], queuedUpdates = 0}
+2019-03-20 12:35:43.299+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:City(population) [provider: {key=native-btree, version=1.0}]]
+2019-03-20 12:35:43.315+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index creation finished. Index [:City(location) [provider: {key=native-btree, version=1.0}]] is ONLINE.
+2019-03-20 12:35:43.315+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] TIME/PHASE Final: SCAN[nbrOfReports=0], WRITE[totalTime=62ms, avgTime=62ms, minTime=0ns, maxTime=62ms, nbrOfReports=1], FLIP[totalTime=4ms, avgTime=4ms, minTime=0ns, maxTime=4ms, nbrOfReports=1]
+2019-03-20 12:35:43.315+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@5cbd35d8[Running, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 2], batchedUpdates = [], queuedUpdates = 0}
+2019-03-20 12:35:43.318+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='LABEL', name='Country'} with newTokenId=7
+2019-03-20 12:35:43.322+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@1fb882b9[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], batchedUpdates = [0 updates], queuedUpdates = 0}
+2019-03-20 12:35:43.336+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='PROPERTY', name='iso2'} with newTokenId=6
+2019-03-20 12:35:43.344+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index creation finished. Index [:City(population) [provider: {key=native-btree, version=1.0}]] is ONLINE.
+2019-03-20 12:35:43.344+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] TIME/PHASE Final: SCAN[nbrOfReports=0], WRITE[totalTime=41ms, avgTime=41ms, minTime=0ns, maxTime=41ms, nbrOfReports=1], FLIP[totalTime=2ms, avgTime=2ms, minTime=0ns, maxTime=2ms, nbrOfReports=1]
+2019-03-20 12:35:43.345+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@1fb882b9[Running, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 2], batchedUpdates = [], queuedUpdates = 0}
+2019-03-20 12:35:43.347+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Country(iso2) [provider: {key=native-btree, version=1.0}]]
+2019-03-20 12:35:43.365+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Country(name) [provider: {key=native-btree, version=1.0}]]
+2019-03-20 12:35:43.370+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@34591114[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], batchedUpdates = [0 updates], queuedUpdates = 0}
+2019-03-20 12:35:43.389+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@7689624[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 1], batchedUpdates = [0 updates], queuedUpdates = 0}
+2019-03-20 12:35:43.392+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index creation finished. Index [:Country(iso2) [provider: {key=native-btree, version=1.0}]] is ONLINE.
+2019-03-20 12:35:43.392+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] TIME/PHASE Final: SCAN[nbrOfReports=0], WRITE[totalTime=41ms, avgTime=41ms, minTime=0ns, maxTime=41ms, nbrOfReports=1], FLIP[totalTime=2ms, avgTime=2ms, minTime=0ns, maxTime=2ms, nbrOfReports=1]
+2019-03-20 12:35:43.392+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@34591114[Running, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 2], batchedUpdates = [], queuedUpdates = 0}
+2019-03-20 12:35:43.411+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index creation finished. Index [:Country(name) [provider: {key=native-btree, version=1.0}]] is ONLINE.
+2019-03-20 12:35:43.411+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] TIME/PHASE Final: SCAN[nbrOfReports=0], WRITE[totalTime=41ms, avgTime=41ms, minTime=0ns, maxTime=41ms, nbrOfReports=1], FLIP[totalTime=2ms, avgTime=2ms, minTime=0ns, maxTime=2ms, nbrOfReports=1]
+2019-03-20 12:35:43.412+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@7689624[Running, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 2], batchedUpdates = [], queuedUpdates = 0}
+2019-03-20 12:35:50.747+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='PROPERTY', name='photo'} with newTokenId=7
+2019-03-20 12:35:50.793+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='PROPERTY', name='url'} with newTokenId=8
+2019-03-20 12:35:50.801+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='PROPERTY', name='city'} with newTokenId=9
+2019-03-20 12:35:50.807+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='PROPERTY', name='country'} with newTokenId=10
+2019-03-20 12:35:50.816+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='PROPERTY', name='state'} with newTokenId=11
+2019-03-20 12:35:50.831+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='PROPERTY', name='urlname'} with newTokenId=12
+2019-03-20 12:35:50.840+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='PROPERTY', name='visibility'} with newTokenId=13
+2019-03-20 12:35:50.847+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='PROPERTY', name='response'} with newTokenId=14
+2019-03-20 12:35:50.853+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='PROPERTY', name='guests'} with newTokenId=15
+2019-03-20 12:35:50.860+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='PROPERTY', name='mtime'} with newTokenId=16
+2019-03-20 12:35:50.876+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='RELATIONSHIP', name='MEMBER'} with newTokenId=0
+2019-03-20 12:35:50.914+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='RELATIONSHIP', name='EVENT'} with newTokenId=1
+2019-03-20 12:35:50.919+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='RELATIONSHIP', name='GROUP'} with newTokenId=2
+2019-03-20 12:35:50.971+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='RELATIONSHIP', name='RSVP'} with newTokenId=3
+2019-03-20 12:35:50.978+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='RELATIONSHIP', name='HELD'} with newTokenId=4
+2019-03-20 12:35:50.985+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='RELATIONSHIP', name='LOCATED_AT'} with newTokenId=5
+2019-03-20 12:35:50.997+0000 INFO [o.n.c.c.s.m.t.ReplicatedTokenStateMachine] Applying ReplicatedTokenRequest{type='RELATIONSHIP', name='TOPIC'} with newTokenId=6
+2019-03-20 12:36:09.223+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1521, gcTime=1605, gcCount=2}
+2019-03-20 12:36:12.808+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=2062, gcTime=2104, gcCount=2}
+2019-03-20 12:36:14.267+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1158, gcTime=1238, gcCount=1}
+2019-03-20 12:36:15.601+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1110, gcTime=1173, gcCount=1}
+2019-03-20 12:36:16.661+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=959, gcTime=1013, gcCount=1}
+2019-03-20 12:36:17.606+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=845, gcTime=896, gcCount=1}
+2019-03-20 12:36:18.502+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=796, gcTime=863, gcCount=1}
+2019-03-20 12:36:19.553+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=950, gcTime=1017, gcCount=1}
+2019-03-20 12:36:20.506+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=852, gcTime=912, gcCount=1}
+2019-03-20 12:36:21.412+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=806, gcTime=883, gcCount=1}
+2019-03-20 12:36:22.544+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1031, gcTime=1107, gcCount=1}
+2019-03-20 12:36:23.409+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=765, gcTime=840, gcCount=1}
+2019-03-20 12:36:24.309+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=799, gcTime=881, gcCount=1}
+2019-03-20 12:36:25.352+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=943, gcTime=1025, gcCount=1}
+2019-03-20 12:36:26.533+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1081, gcTime=1161, gcCount=1}
+2019-03-20 12:36:27.491+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=857, gcTime=914, gcCount=1}
+2019-03-20 12:36:28.539+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=947, gcTime=1031, gcCount=1}
+2019-03-20 12:36:29.657+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1018, gcTime=1102, gcCount=1}
+2019-03-20 12:36:30.521+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=763, gcTime=853, gcCount=1}
+2019-03-20 12:36:31.418+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=797, gcTime=888, gcCount=1}
+2019-03-20 12:36:32.260+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=742, gcTime=835, gcCount=1}
+2019-03-20 12:36:33.131+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=770, gcTime=834, gcCount=1}
+2019-03-20 12:36:34.155+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=924, gcTime=1012, gcCount=1}
+2019-03-20 12:36:35.000+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=744, gcTime=838, gcCount=1}
+2019-03-20 12:36:35.929+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=829, gcTime=903, gcCount=1}
+2019-03-20 12:36:37.662+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1032, gcTime=1111, gcCount=1}
+2019-03-20 12:36:41.466+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=169, gcTime=254, gcCount=1}
+2019-03-20 12:36:41.518+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 52 seconds: CALL apoc.load.json('https://storage.googleapis.com/meetup-data/segments/batch1ab' /* 'file:///Users/davidallen/hax/meetup-dataset/meetup.raw' */) 
+yield value 
+with value.venue as venueData,
+value.member as memberData,
+value.event as eventData,
+value.group.group_topics as topics,
+value as data,
+apoc.map.removeKeys(value.group, ['group_topics']) as groupData
+
+MERGE (member:Member { id: memberData.member_id })
+   ON CREATE SET 
+        member.name = memberData.member_name,
+        member.photo = memberData.photo
+
+MERGE (event:Event { id: eventData.event_id })
+   ON CREATE SET 
+        event.name = eventData.event_name,
+        event.time = datetime({ epochMillis: coalesce(eventData.time, 0) }),
+        event.url = eventData.event_url
+
+MERGE (group:Group { id: groupData.group_id })
+   ON CREATE SET 
+        group.name = groupData.group_name,
+        group.city = groupData.group_city,
+        group.country = groupData.group_country,
+        group.state = groupData.group_state,
+        group.location = point({
+            latitude: groupData.group_lat,
+            longitude: groupData.group_lon
+        }),
+        group.urlname = groupData.group_urlname
+
+MERGE (venue:Venue { id: coalesce(venueData.venue_id, randomUUID()) })
+   ON CREATE SET 
+        venue.name = venueData.venue_name,
+        venue.location = point({
+            latitude: venueData.lat,
+            longitude: venueData.lon
+        })
+
+CREATE (rsvp:RSVP {
+    id: coalesce(data.rsvp_id, randomUUID()),
+    guests: coalesce(data.guests, 0),
+    mtime: datetime({ epochMillis: coalesce(data.mtime, 0) }),
+    response: data.response,
+    visibility: data.visibility
+})
+
+CREATE (rsvp)-[:MEMBER]->(member)
+CREATE (rsvp)-[:EVENT]->(event)
+CREATE (rsvp)-[:GROUP]->(group)
+
+MERGE (member)-[:RSVP]->(event)
+MERGE (event)<-[:HELD]-(group)
+MERGE (event)-[:LOCATED_AT]->(venue)
+
+WITH  group, topics
+UNWIND topics as tp
+
+MERGE (t:Topic { urlkey: tp.urlkey })
+   ON CREATE SET t.name = tp.topic_name
+
+MERGE (group)-[:TOPIC]->(t);
+2019-03-20 12:36:54.011+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=175, gcTime=184, gcCount=1}
+2019-03-20 12:36:54.543+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=129, gcTime=144, gcCount=1}
+2019-03-20 12:36:56.808+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1763, gcTime=1760, gcCount=2}
+2019-03-20 12:36:58.295+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1186, gcTime=1266, gcCount=1}
+2019-03-20 12:36:59.843+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1247, gcTime=1337, gcCount=1}
+2019-03-20 12:37:01.091+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1148, gcTime=1129, gcCount=1}
+2019-03-20 12:37:02.361+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1170, gcTime=1199, gcCount=1}
+2019-03-20 12:37:03.531+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1069, gcTime=1114, gcCount=1}
+2019-03-20 12:37:07.395+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 25 seconds: CALL apoc.load.json('https://storage.googleapis.com/meetup-data/segments/batch1ac' /* 'file:///Users/davidallen/hax/meetup-dataset/meetup.raw' */) 
+yield value 
+with value.venue as venueData,
+value.member as memberData,
+value.event as eventData,
+value.group.group_topics as topics,
+value as data,
+apoc.map.removeKeys(value.group, ['group_topics']) as groupData
+
+MERGE (member:Member { id: memberData.member_id })
+   ON CREATE SET 
+        member.name = memberData.member_name,
+        member.photo = memberData.photo
+
+MERGE (event:Event { id: eventData.event_id })
+   ON CREATE SET 
+        event.name = eventData.event_name,
+        event.time = datetime({ epochMillis: coalesce(eventData.time, 0) }),
+        event.url = eventData.event_url
+
+MERGE (group:Group { id: groupData.group_id })
+   ON CREATE SET 
+        group.name = groupData.group_name,
+        group.city = groupData.group_city,
+        group.country = groupData.group_country,
+        group.state = groupData.group_state,
+        group.location = point({
+            latitude: groupData.group_lat,
+            longitude: groupData.group_lon
+        }),
+        group.urlname = groupData.group_urlname
+
+MERGE (venue:Venue { id: coalesce(venueData.venue_id, randomUUID()) })
+   ON CREATE SET 
+        venue.name = venueData.venue_name,
+        venue.location = point({
+            latitude: venueData.lat,
+            longitude: venueData.lon
+        })
+
+CREATE (rsvp:RSVP {
+    id: coalesce(data.rsvp_id, randomUUID()),
+    guests: coalesce(data.guests, 0),
+    mtime: datetime({ epochMillis: coalesce(data.mtime, 0) }),
+    response: data.response,
+    visibility: data.visibility
+})
+
+CREATE (rsvp)-[:MEMBER]->(member)
+CREATE (rsvp)-[:EVENT]->(event)
+CREATE (rsvp)-[:GROUP]->(group)
+
+MERGE (member)-[:RSVP]->(event)
+MERGE (event)<-[:HELD]-(group)
+MERGE (event)-[:LOCATED_AT]->(venue)
+
+WITH  group, topics
+UNWIND topics as tp
+
+MERGE (t:Topic { urlkey: tp.urlkey })
+   ON CREATE SET t.name = tp.topic_name
+
+MERGE (group)-[:TOPIC]->(t);
+2019-03-20 12:37:07.755+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=220, gcTime=232, gcCount=1}
+2019-03-20 12:37:18.283+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1278, gcTime=1376, gcCount=2}
+2019-03-20 12:37:20.193+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1446, gcTime=1498, gcCount=2}
+2019-03-20 12:37:21.411+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1017, gcTime=1080, gcCount=1}
+2019-03-20 12:37:22.294+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=782, gcTime=838, gcCount=1}
+2019-03-20 12:37:28.121+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=219, gcTime=242, gcCount=1}
+2019-03-20 12:37:28.138+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 20 seconds: CALL apoc.load.json('https://storage.googleapis.com/meetup-data/segments/batch1ad' /* 'file:///Users/davidallen/hax/meetup-dataset/meetup.raw' */) 
+yield value 
+with value.venue as venueData,
+value.member as memberData,
+value.event as eventData,
+value.group.group_topics as topics,
+value as data,
+apoc.map.removeKeys(value.group, ['group_topics']) as groupData
+
+MERGE (member:Member { id: memberData.member_id })
+   ON CREATE SET 
+        member.name = memberData.member_name,
+        member.photo = memberData.photo
+
+MERGE (event:Event { id: eventData.event_id })
+   ON CREATE SET 
+        event.name = eventData.event_name,
+        event.time = datetime({ epochMillis: coalesce(eventData.time, 0) }),
+        event.url = eventData.event_url
+
+MERGE (group:Group { id: groupData.group_id })
+   ON CREATE SET 
+        group.name = groupData.group_name,
+        group.city = groupData.group_city,
+        group.country = groupData.group_country,
+        group.state = groupData.group_state,
+        group.location = point({
+            latitude: groupData.group_lat,
+            longitude: groupData.group_lon
+        }),
+        group.urlname = groupData.group_urlname
+
+MERGE (venue:Venue { id: coalesce(venueData.venue_id, randomUUID()) })
+   ON CREATE SET 
+        venue.name = venueData.venue_name,
+        venue.location = point({
+            latitude: venueData.lat,
+            longitude: venueData.lon
+        })
+
+CREATE (rsvp:RSVP {
+    id: coalesce(data.rsvp_id, randomUUID()),
+    guests: coalesce(data.guests, 0),
+    mtime: datetime({ epochMillis: coalesce(data.mtime, 0) }),
+    response: data.response,
+    visibility: data.visibility
+})
+
+CREATE (rsvp)-[:MEMBER]->(member)
+CREATE (rsvp)-[:EVENT]->(event)
+CREATE (rsvp)-[:GROUP]->(group)
+
+MERGE (member)-[:RSVP]->(event)
+MERGE (event)<-[:HELD]-(group)
+MERGE (event)-[:LOCATED_AT]->(venue)
+
+WITH  group, topics
+UNWIND topics as tp
+
+MERGE (t:Topic { urlkey: tp.urlkey })
+   ON CREATE SET t.name = tp.topic_name
+
+MERGE (group)-[:TOPIC]->(t);
+2019-03-20 12:37:37.358+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=105, gcTime=161, gcCount=1}
+2019-03-20 12:37:39.448+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1473, gcTime=1536, gcCount=2}
+2019-03-20 12:37:41.315+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1466, gcTime=1519, gcCount=2}
+2019-03-20 12:37:42.163+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=747, gcTime=759, gcCount=1}
+2019-03-20 12:37:43.354+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1091, gcTime=1115, gcCount=1}
+2019-03-20 12:37:47.427+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 19 seconds: CALL apoc.load.json('https://storage.googleapis.com/meetup-data/segments/batch1ae' /* 'file:///Users/davidallen/hax/meetup-dataset/meetup.raw' */) 
+yield value 
+with value.venue as venueData,
+value.member as memberData,
+value.event as eventData,
+value.group.group_topics as topics,
+value as data,
+apoc.map.removeKeys(value.group, ['group_topics']) as groupData
+
+MERGE (member:Member { id: memberData.member_id })
+   ON CREATE SET 
+        member.name = memberData.member_name,
+        member.photo = memberData.photo
+
+MERGE (event:Event { id: eventData.event_id })
+   ON CREATE SET 
+        event.name = eventData.event_name,
+        event.time = datetime({ epochMillis: coalesce(eventData.time, 0) }),
+        event.url = eventData.event_url
+
+MERGE (group:Group { id: groupData.group_id })
+   ON CREATE SET 
+        group.name = groupData.group_name,
+        group.city = groupData.group_city,
+        group.country = groupData.group_country,
+        group.state = groupData.group_state,
+        group.location = point({
+            latitude: groupData.group_lat,
+            longitude: groupData.group_lon
+        }),
+        group.urlname = groupData.group_urlname
+
+MERGE (venue:Venue { id: coalesce(venueData.venue_id, randomUUID()) })
+   ON CREATE SET 
+        venue.name = venueData.venue_name,
+        venue.location = point({
+            latitude: venueData.lat,
+            longitude: venueData.lon
+        })
+
+CREATE (rsvp:RSVP {
+    id: coalesce(data.rsvp_id, randomUUID()),
+    guests: coalesce(data.guests, 0),
+    mtime: datetime({ epochMillis: coalesce(data.mtime, 0) }),
+    response: data.response,
+    visibility: data.visibility
+})
+
+CREATE (rsvp)-[:MEMBER]->(member)
+CREATE (rsvp)-[:EVENT]->(event)
+CREATE (rsvp)-[:GROUP]->(group)
+
+MERGE (member)-[:RSVP]->(event)
+MERGE (event)<-[:HELD]-(group)
+MERGE (event)-[:LOCATED_AT]->(venue)
+
+WITH  group, topics
+UNWIND topics as tp
+
+MERGE (t:Topic { urlkey: tp.urlkey })
+   ON CREATE SET t.name = tp.topic_name
+
+MERGE (group)-[:TOPIC]->(t);
+2019-03-20 12:37:47.747+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=154, gcTime=231, gcCount=1}
+2019-03-20 12:37:56.525+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=200, gcTime=223, gcCount=1}
+2019-03-20 12:37:58.381+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1555, gcTime=1615, gcCount=2}
+2019-03-20 12:37:59.301+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=720, gcTime=800, gcCount=1}
+2019-03-20 12:38:00.655+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1254, gcTime=1241, gcCount=1}
+2019-03-20 12:38:01.520+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=764, gcTime=791, gcCount=1}
+2019-03-20 12:38:02.108+0000 WARN [o.n.b.t.p.HouseKeeper] Fatal error occurred when handling a client connection, remote peer unexpectedly closed connection: [id: 0xa8681d00, L:/192.168.1.20:7687 - R:/192.168.2.36:60086]
+2019-03-20 12:38:05.017+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 17 seconds: CALL apoc.load.json('https://storage.googleapis.com/meetup-data/segments/batch1af' /* 'file:///Users/davidallen/hax/meetup-dataset/meetup.raw' */) 
+yield value 
+with value.venue as venueData,
+value.member as memberData,
+value.event as eventData,
+value.group.group_topics as topics,
+value as data,
+apoc.map.removeKeys(value.group, ['group_topics']) as groupData
+
+MERGE (member:Member { id: memberData.member_id })
+   ON CREATE SET 
+        member.name = memberData.member_name,
+        member.photo = memberData.photo
+
+MERGE (event:Event { id: eventData.event_id })
+   ON CREATE SET 
+        event.name = eventData.event_name,
+        event.time = datetime({ epochMillis: coalesce(eventData.time, 0) }),
+        event.url = eventData.event_url
+
+MERGE (group:Group { id: groupData.group_id })
+   ON CREATE SET 
+        group.name = groupData.group_name,
+        group.city = groupData.group_city,
+        group.country = groupData.group_country,
+        group.state = groupData.group_state,
+        group.location = point({
+            latitude: groupData.group_lat,
+            longitude: groupData.group_lon
+        }),
+        group.urlname = groupData.group_urlname
+
+MERGE (venue:Venue { id: coalesce(venueData.venue_id, randomUUID()) })
+   ON CREATE SET 
+        venue.name = venueData.venue_name,
+        venue.location = point({
+            latitude: venueData.lat,
+            longitude: venueData.lon
+        })
+
+CREATE (rsvp:RSVP {
+    id: coalesce(data.rsvp_id, randomUUID()),
+    guests: coalesce(data.guests, 0),
+    mtime: datetime({ epochMillis: coalesce(data.mtime, 0) }),
+    response: data.response,
+    visibility: data.visibility
+})
+
+CREATE (rsvp)-[:MEMBER]->(member)
+CREATE (rsvp)-[:EVENT]->(event)
+CREATE (rsvp)-[:GROUP]->(group)
+
+MERGE (member)-[:RSVP]->(event)
+MERGE (event)<-[:HELD]-(group)
+MERGE (event)-[:LOCATED_AT]->(venue)
+
+WITH  group, topics
+UNWIND topics as tp
+
+MERGE (t:Topic { urlkey: tp.urlkey })
+   ON CREATE SET t.name = tp.topic_name
+
+MERGE (group)-[:TOPIC]->(t);
+2019-03-20 12:38:05.302+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=273, gcTime=278, gcCount=1}
+2019-03-20 12:38:13.339+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=122, gcTime=154, gcCount=1}
+2019-03-20 12:38:13.816+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=176, gcTime=223, gcCount=1}
+2019-03-20 12:38:15.535+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1518, gcTime=1586, gcCount=2}
+2019-03-20 12:38:16.673+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1038, gcTime=1061, gcCount=1}
+2019-03-20 12:38:18.067+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1293, gcTime=1319, gcCount=1}
+2019-03-20 12:38:19.035+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=744, gcTime=822, gcCount=1}
+2019-03-20 12:38:19.512+0000 WARN [o.n.b.t.p.HouseKeeper] Fatal error occurred when handling a client connection, remote peer unexpectedly closed connection: [id: 0xad3e4b57, L:/192.168.1.20:7687 - R:/192.168.1.25:41094]
+2019-03-20 12:38:22.927+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 17 seconds: CALL apoc.load.json('https://storage.googleapis.com/meetup-data/segments/batch1ag' /* 'file:///Users/davidallen/hax/meetup-dataset/meetup.raw' */) 
+yield value 
+with value.venue as venueData,
+value.member as memberData,
+value.event as eventData,
+value.group.group_topics as topics,
+value as data,
+apoc.map.removeKeys(value.group, ['group_topics']) as groupData
+
+MERGE (member:Member { id: memberData.member_id })
+   ON CREATE SET 
+        member.name = memberData.member_name,
+        member.photo = memberData.photo
+
+MERGE (event:Event { id: eventData.event_id })
+   ON CREATE SET 
+        event.name = eventData.event_name,
+        event.time = datetime({ epochMillis: coalesce(eventData.time, 0) }),
+        event.url = eventData.event_url
+
+MERGE (group:Group { id: groupData.group_id })
+   ON CREATE SET 
+        group.name = groupData.group_name,
+        group.city = groupData.group_city,
+        group.country = groupData.group_country,
+        group.state = groupData.group_state,
+        group.location = point({
+            latitude: groupData.group_lat,
+            longitude: groupData.group_lon
+        }),
+        group.urlname = groupData.group_urlname
+
+MERGE (venue:Venue { id: coalesce(venueData.venue_id, randomUUID()) })
+   ON CREATE SET 
+        venue.name = venueData.venue_name,
+        venue.location = point({
+            latitude: venueData.lat,
+            longitude: venueData.lon
+        })
+
+CREATE (rsvp:RSVP {
+    id: coalesce(data.rsvp_id, randomUUID()),
+    guests: coalesce(data.guests, 0),
+    mtime: datetime({ epochMillis: coalesce(data.mtime, 0) }),
+    response: data.response,
+    visibility: data.visibility
+})
+
+CREATE (rsvp)-[:MEMBER]->(member)
+CREATE (rsvp)-[:EVENT]->(event)
+CREATE (rsvp)-[:GROUP]->(group)
+
+MERGE (member)-[:RSVP]->(event)
+MERGE (event)<-[:HELD]-(group)
+MERGE (event)-[:LOCATED_AT]->(venue)
+
+WITH  group, topics
+UNWIND topics as tp
+
+MERGE (t:Topic { urlkey: tp.urlkey })
+   ON CREATE SET t.name = tp.topic_name
+
+MERGE (group)-[:TOPIC]->(t);
+2019-03-20 12:38:24.720+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=575, gcTime=580, gcCount=1}
+2019-03-20 12:38:32.693+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=150, gcTime=224, gcCount=1}
+2019-03-20 12:38:32.901+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=108, gcTime=125, gcCount=1}
+2019-03-20 12:38:34.640+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1639, gcTime=1663, gcCount=2}
+2019-03-20 12:38:40.443+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=294, gcTime=313, gcCount=2}
+2019-03-20 12:38:46.901+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=173, gcTime=183, gcCount=1}
+2019-03-20 12:38:47.150+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=149, gcTime=164, gcCount=1}
+2019-03-20 12:38:49.138+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1544, gcTime=1563, gcCount=2}
+2019-03-20 12:38:56.142+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=291, gcTime=386, gcCount=2}
+2019-03-20 12:39:02.510+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=116, gcTime=127, gcCount=1}
+2019-03-20 12:39:04.364+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1600, gcTime=1618, gcCount=2}
+2019-03-20 12:39:10.858+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=264, gcTime=280, gcCount=2}
+2019-03-20 12:39:16.525+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=104, gcTime=124, gcCount=1}
+2019-03-20 12:39:18.423+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1622, gcTime=1654, gcCount=2}
+2019-03-20 12:39:26.540+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=304, gcTime=390, gcCount=2}
+2019-03-20 12:39:32.229+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=110, gcTime=119, gcCount=1}
+2019-03-20 12:39:34.100+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1630, gcTime=1642, gcCount=2}
+2019-03-20 12:39:44.402+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=645, gcTime=664, gcCount=2}
+2019-03-20 12:39:46.407+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=108, gcTime=143, gcCount=1}
+2019-03-20 12:39:46.646+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=139, gcTime=161, gcCount=1}
+2019-03-20 12:39:53.370+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=244, gcTime=294, gcCount=2}
+2019-03-20 12:40:06.670+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=220, gcTime=299, gcCount=2}
+2019-03-20 12:40:20.546+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=329, gcTime=368, gcCount=2}
+2019-03-20 12:40:34.304+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=490, gcTime=502, gcCount=2}
+2019-03-20 12:40:44.294+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=246, gcTime=272, gcCount=2}
+2019-03-20 12:40:49.889+0000 INFO [o.n.k.NeoStoreDataSource] Rotated to transaction log [/var/lib/neo4j/data/databases/graph.db/neostore.transaction.db.1] version=1, last transaction in previous log=66
+2019-03-20 12:40:57.603+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=362, gcTime=384, gcCount=2}
+2019-03-20 12:41:01.457+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=106, gcTime=136, gcCount=1}
+2019-03-20 12:41:08.231+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=320, gcTime=392, gcCount=2}
+2019-03-20 12:41:19.500+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=417, gcTime=420, gcCount=2}
+2019-03-20 12:41:23.436+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=119, gcTime=144, gcCount=1}
+2019-03-20 12:41:28.003+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 184 seconds: CALL apoc.load.json('https://storage.googleapis.com/meetup-data/segments/batch1au' /* 'file:///Users/davidallen/hax/meetup-dataset/meetup.raw' */) 
+yield value 
+with value.venue as venueData,
+value.member as memberData,
+value.event as eventData,
+value.group.group_topics as topics,
+value as data,
+apoc.map.removeKeys(value.group, ['group_topics']) as groupData
+
+MERGE (member:Member { id: memberData.member_id })
+   ON CREATE SET 
+        member.name = memberData.member_name,
+        member.photo = memberData.photo
+
+MERGE (event:Event { id: eventData.event_id })
+   ON CREATE SET 
+        event.name = eventData.event_name,
+        event.time = datetime({ epochMillis: coalesce(eventData.time, 0) }),
+        event.url = eventData.event_url
+
+MERGE (group:Group { id: groupData.group_id })
+   ON CREATE SET 
+        group.name = groupData.group_name,
+        group.city = groupData.group_city,
+        group.country = groupData.group_country,
+        group.state = groupData.group_state,
+        group.location = point({
+            latitude: groupData.group_lat,
+            longitude: groupData.group_lon
+        }),
+        group.urlname = groupData.group_urlname
+
+MERGE (venue:Venue { id: coalesce(venueData.venue_id, randomUUID()) })
+   ON CREATE SET 
+        venue.name = venueData.venue_name,
+        venue.location = point({
+            latitude: venueData.lat,
+            longitude: venueData.lon
+        })
+
+CREATE (rsvp:RSVP {
+    id: coalesce(data.rsvp_id, randomUUID()),
+    guests: coalesce(data.guests, 0),
+    mtime: datetime({ epochMillis: coalesce(data.mtime, 0) }),
+    response: data.response,
+    visibility: data.visibility
+})
+
+CREATE (rsvp)-[:MEMBER]->(member)
+CREATE (rsvp)-[:EVENT]->(event)
+CREATE (rsvp)-[:GROUP]->(group)
+
+MERGE (member)-[:RSVP]->(event)
+MERGE (event)<-[:HELD]-(group)
+MERGE (event)-[:LOCATED_AT]->(venue)
+
+WITH  group, topics
+UNWIND topics as tp
+
+MERGE (t:Topic { urlkey: tp.urlkey })
+   ON CREATE SET t.name = tp.topic_name
+
+MERGE (group)-[:TOPIC]->(t);
+2019-03-20 12:41:31.160+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=353, gcTime=405, gcCount=2}
+2019-03-20 12:41:34.709+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=101, gcTime=119, gcCount=1}
+2019-03-20 12:41:41.308+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=290, gcTime=351, gcCount=2}
+2019-03-20 12:41:52.913+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=616, gcTime=659, gcCount=2}
+2019-03-20 12:42:04.448+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=481, gcTime=560, gcCount=2}
+2019-03-20 12:42:16.206+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=424, gcTime=478, gcCount=2}
+2019-03-20 12:42:27.832+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=497, gcTime=581, gcCount=2}
+2019-03-20 12:42:39.043+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=504, gcTime=552, gcCount=2}
+2019-03-20 12:42:49.350+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=467, gcTime=469, gcCount=2}
+2019-03-20 12:43:01.323+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=455, gcTime=475, gcCount=2}
+2019-03-20 12:43:10.879+0000 INFO [o.n.c.c.s.CommandApplicationProcess] BatchSize{min=1.0, max=1.0, avg=1.0, count=4096}
+2019-03-20 12:43:11.508+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=455, gcTime=460, gcCount=2}
+2019-03-20 12:43:14.530+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=103, gcTime=115, gcCount=1}
+2019-03-20 12:43:22.918+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=499, gcTime=516, gcCount=2}
+2019-03-20 12:43:34.453+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=396, gcTime=478, gcCount=2}
+2019-03-20 12:43:45.631+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=465, gcTime=486, gcCount=2}
+2019-03-20 12:43:57.902+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=518, gcTime=535, gcCount=2}
+2019-03-20 12:44:10.656+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=675, gcTime=763, gcCount=2}
+2019-03-20 12:44:21.614+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=565, gcTime=580, gcCount=2}
+2019-03-20 12:44:30.527+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=451, gcTime=531, gcCount=2}
+2019-03-20 12:44:32.960+0000 INFO [o.n.k.NeoStoreDataSource] Rotated to transaction log [/var/lib/neo4j/data/databases/graph.db/neostore.transaction.db.2] version=2, last transaction in previous log=86
+2019-03-20 12:44:42.638+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=508, gcTime=588, gcCount=2}
+2019-03-20 12:44:49.846+0000 INFO [o.n.c.c.c.l.s.Segments] Pruning SegmentFile{file=raft.log.0, header=SegmentHeader{prevFileLastIndex=-1, version=0, prevIndex=-1, prevTerm=-1}}
+2019-03-20 12:44:53.060+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=462, gcTime=528, gcCount=2}
+2019-03-20 12:44:55.323+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=114, gcTime=199, gcCount=1}
+2019-03-20 12:45:04.767+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=565, gcTime=567, gcCount=2}
+2019-03-20 12:45:14.207+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=479, gcTime=530, gcCount=2}
+2019-03-20 12:45:26.053+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=536, gcTime=581, gcCount=2}
+2019-03-20 12:45:35.763+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=454, gcTime=524, gcCount=2}
+2019-03-20 12:45:37.868+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=127, gcTime=134, gcCount=1}
+2019-03-20 12:45:49.068+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=800, gcTime=872, gcCount=2}
+2019-03-20 12:46:00.358+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=549, gcTime=603, gcCount=2}
+2019-03-20 12:46:11.136+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=436, gcTime=508, gcCount=2}
+2019-03-20 12:46:13.412+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=156, gcTime=169, gcCount=1}
+2019-03-20 12:46:23.150+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=521, gcTime=546, gcCount=2}
+2019-03-20 12:46:34.459+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=468, gcTime=548, gcCount=2}
+2019-03-20 12:46:44.852+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=529, gcTime=548, gcCount=2}
+2019-03-20 12:46:56.355+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=686, gcTime=730, gcCount=2}
+2019-03-20 12:47:07.469+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=618, gcTime=676, gcCount=2}
+2019-03-20 12:47:19.615+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=743, gcTime=831, gcCount=2}
+2019-03-20 12:47:20.339+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=122, gcTime=123, gcCount=1}
+2019-03-20 12:47:31.988+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=879, gcTime=942, gcCount=2}
+2019-03-20 12:47:44.171+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1150, gcTime=1197, gcCount=2}
+2019-03-20 12:47:56.992+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1161, gcTime=1181, gcCount=2}
+2019-03-20 12:48:07.373+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=717, gcTime=775, gcCount=2}
+2019-03-20 12:48:20.424+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=696, gcTime=783, gcCount=2}
+2019-03-20 12:48:32.427+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1159, gcTime=1197, gcCount=2}
+2019-03-20 12:48:32.538+0000 INFO [o.n.k.NeoStoreDataSource] Rotated to transaction log [/var/lib/neo4j/data/databases/graph.db/neostore.transaction.db.3] version=3, last transaction in previous log=107
+2019-03-20 12:48:44.952+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1150, gcTime=1167, gcCount=2}
+2019-03-20 12:48:45.490+0000 WARN [o.n.b.t.p.HouseKeeper] Fatal error occurred when handling a client connection, remote peer unexpectedly closed connection: [id: 0x53bde8e6, L:/192.168.1.20:7687 - R:/192.168.2.63:34922]
+2019-03-20 12:48:57.130+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=954, gcTime=1028, gcCount=2}
+2019-03-20 12:49:08.846+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=935, gcTime=1022, gcCount=2}
+2019-03-20 12:49:13.697+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 465 seconds: CALL apoc.load.json('https://storage.googleapis.com/meetup-data/segments/batch1cj' /* 'file:///Users/davidallen/hax/meetup-dataset/meetup.raw' */) 
+yield value 
+with value.venue as venueData,
+value.member as memberData,
+value.event as eventData,
+value.group.group_topics as topics,
+value as data,
+apoc.map.removeKeys(value.group, ['group_topics']) as groupData
+
+MERGE (member:Member { id: memberData.member_id })
+   ON CREATE SET 
+        member.name = memberData.member_name,
+        member.photo = memberData.photo
+
+MERGE (event:Event { id: eventData.event_id })
+   ON CREATE SET 
+        event.name = eventData.event_name,
+        event.time = datetime({ epochMillis: coalesce(eventData.time, 0) }),
+        event.url = eventData.event_url
+
+MERGE (group:Group { id: groupData.group_id })
+   ON CREATE SET 
+        group.name = groupData.group_name,
+        group.city = groupData.group_city,
+        group.country = groupData.group_country,
+        group.state = groupData.group_state,
+        group.location = point({
+            latitude: groupData.group_lat,
+            longitude: groupData.group_lon
+        }),
+        group.urlname = groupData.group_urlname
+
+MERGE (venue:Venue { id: coalesce(venueData.venue_id, randomUUID()) })
+   ON CREATE SET 
+        venue.name = venueData.venue_name,
+        venue.location = point({
+            latitude: venueData.lat,
+            longitude: venueData.lon
+        })
+
+CREATE (rsvp:RSVP {
+    id: coalesce(data.rsvp_id, randomUUID()),
+    guests: coalesce(data.guests, 0),
+    mtime: datetime({ epochMillis: coalesce(data.mtime, 0) }),
+    response: data.response,
+    visibility: data.visibility
+})
+
+CREATE (rsvp)-[:MEMBER]->(member)
+CREATE (rsvp)-[:EVENT]->(event)
+CREATE (rsvp)-[:GROUP]->(group)
+
+MERGE (member)-[:RSVP]->(event)
+MERGE (event)<-[:HELD]-(group)
+MERGE (event)-[:LOCATED_AT]->(venue)
+
+WITH  group, topics
+UNWIND topics as tp
+
+MERGE (t:Topic { urlkey: tp.urlkey })
+   ON CREATE SET t.name = tp.topic_name
+
+MERGE (group)-[:TOPIC]->(t);
+2019-03-20 12:49:21.275+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=839, gcTime=865, gcCount=2}
+2019-03-20 12:49:33.200+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=767, gcTime=865, gcCount=2}
+2019-03-20 12:49:45.028+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=765, gcTime=825, gcCount=2}
+2019-03-20 12:49:58.680+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1460, gcTime=1553, gcCount=2}
+2019-03-20 12:50:10.863+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=917, gcTime=958, gcCount=2}
+2019-03-20 12:50:15.028+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 115 checkpoint started...
+2019-03-20 12:50:15.331+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 115 to [/data/databases/graph.db/neostore.counts.db.b], from [/data/databases/graph.db/neostore.counts.db.a].
+2019-03-20 12:50:17.393+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 115 checkpoint completed in 2s 365ms
+2019-03-20 12:50:17.460+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Pruned log versions 0-1, last checkpoint was made in version 3
+2019-03-20 12:50:23.463+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=965, gcTime=1016, gcCount=2}
+2019-03-20 12:50:36.343+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=911, gcTime=911, gcCount=2}
+2019-03-20 12:50:47.097+0000 INFO [o.n.c.c.s.CommandApplicationProcess] BatchSize{min=1.0, max=1.0, avg=1.0, count=4096}
+2019-03-20 12:50:48.829+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=981, gcTime=986, gcCount=2}
+2019-03-20 12:51:00.663+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=860, gcTime=859, gcCount=2}
+2019-03-20 12:51:12.332+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=905, gcTime=954, gcCount=2}
+2019-03-20 12:51:22.934+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=907, gcTime=962, gcCount=2}
+2019-03-20 12:51:33.621+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=894, gcTime=967, gcCount=2}
+2019-03-20 12:51:44.013+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=975, gcTime=1004, gcCount=2}
+2019-03-20 12:51:55.578+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1119, gcTime=1195, gcCount=2}
+2019-03-20 12:52:06.140+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=789, gcTime=834, gcCount=2}
+2019-03-20 12:52:17.815+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1150, gcTime=1235, gcCount=2}
+2019-03-20 12:52:29.454+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1255, gcTime=1313, gcCount=2}
+2019-03-20 12:52:40.259+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=903, gcTime=970, gcCount=2}
+2019-03-20 12:52:40.379+0000 INFO [o.n.k.NeoStoreDataSource] Rotated to transaction log [/var/lib/neo4j/data/databases/graph.db/neostore.transaction.db.4] version=4, last transaction in previous log=128
+2019-03-20 12:52:50.411+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=880, gcTime=914, gcCount=2}
+2019-03-20 12:53:01.605+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1144, gcTime=1158, gcCount=2}
+2019-03-20 12:53:12.948+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=965, gcTime=967, gcCount=2}
+2019-03-20 12:53:24.193+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1154, gcTime=1197, gcCount=2}
+2019-03-20 12:53:35.644+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1234, gcTime=1277, gcCount=2}
+2019-03-20 12:53:45.683+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=829, gcTime=860, gcCount=2}
+2019-03-20 12:53:57.035+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1430, gcTime=1452, gcCount=2}
+2019-03-20 12:54:08.218+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=923, gcTime=985, gcCount=2}
+2019-03-20 12:54:18.459+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1084, gcTime=1122, gcCount=2}
+2019-03-20 12:54:29.609+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1070, gcTime=1158, gcCount=2}
+2019-03-20 12:54:41.515+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1171, gcTime=1231, gcCount=2}
+2019-03-20 12:54:52.542+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=974, gcTime=994, gcCount=2}
+2019-03-20 12:55:03.870+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1227, gcTime=1305, gcCount=2}
+2019-03-20 12:55:14.347+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=850, gcTime=933, gcCount=2}
+2019-03-20 12:55:25.692+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1048, gcTime=1064, gcCount=2}
+2019-03-20 12:55:36.221+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=950, gcTime=1042, gcCount=2}
+2019-03-20 12:55:47.738+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1122, gcTime=1141, gcCount=2}
+2019-03-20 12:56:00.629+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1222, gcTime=1279, gcCount=2}
+2019-03-20 12:56:11.677+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=905, gcTime=968, gcCount=2}
+2019-03-20 12:56:24.683+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1177, gcTime=1205, gcCount=2}
+2019-03-20 12:56:37.751+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=994, gcTime=1045, gcCount=2}
+2019-03-20 12:56:37.855+0000 INFO [o.n.k.NeoStoreDataSource] Rotated to transaction log [/var/lib/neo4j/data/databases/graph.db/neostore.transaction.db.5] version=5, last transaction in previous log=149
+2019-03-20 12:56:49.631+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=961, gcTime=1032, gcCount=2}
+2019-03-20 12:57:01.975+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1014, gcTime=1054, gcCount=2}
+2019-03-20 12:57:13.323+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=979, gcTime=1011, gcCount=2}
+2019-03-20 12:57:25.122+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=841, gcTime=883, gcCount=2}
+2019-03-20 12:57:37.858+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=943, gcTime=988, gcCount=2}
+2019-03-20 12:57:49.143+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=827, gcTime=911, gcCount=2}
+2019-03-20 12:58:01.376+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1417, gcTime=1438, gcCount=2}
+2019-03-20 12:58:12.642+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=917, gcTime=972, gcCount=2}
+2019-03-20 12:58:24.240+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=908, gcTime=989, gcCount=2}
+2019-03-20 12:58:36.791+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=862, gcTime=937, gcCount=2}
+2019-03-20 12:58:48.341+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=921, gcTime=952, gcCount=2}
+2019-03-20 12:58:58.314+0000 INFO [o.n.c.c.s.CommandApplicationProcess] BatchSize{min=1.0, max=1.0, avg=1.0, count=4096}
+2019-03-20 12:59:00.600+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=749, gcTime=807, gcCount=2}
+2019-03-20 12:59:12.466+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1026, gcTime=1057, gcCount=2}
+2019-03-20 12:59:23.978+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=914, gcTime=941, gcCount=2}
+2019-03-20 12:59:36.808+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=996, gcTime=1081, gcCount=2}
+2019-03-20 12:59:50.184+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1216, gcTime=1304, gcCount=2}
+2019-03-20 13:00:02.234+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1187, gcTime=1274, gcCount=2}
+2019-03-20 13:00:14.339+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1343, gcTime=1339, gcCount=2}
+2019-03-20 13:00:26.822+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1128, gcTime=1144, gcCount=2}
+2019-03-20 13:00:39.477+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1251, gcTime=1289, gcCount=2}
+2019-03-20 13:00:56.927+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=834, gcTime=910, gcCount=2}
+2019-03-20 13:01:06.978+0000 INFO [o.n.k.NeoStoreDataSource] Rotated to transaction log [/var/lib/neo4j/data/databases/graph.db/neostore.transaction.db.6] version=6, last transaction in previous log=172
+2019-03-20 13:01:16.965+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=790, gcTime=867, gcCount=2}
+2019-03-20 13:01:37.803+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=502, gcTime=594, gcCount=2}
+2019-03-20 13:01:49.538+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1093, gcTime=1153, gcCount=2}
+2019-03-20 13:02:00.039+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1039, gcTime=1076, gcCount=2}
+2019-03-20 13:02:15.106+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=338, gcTime=382, gcCount=2}
+2019-03-20 13:02:30.117+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=995, gcTime=1039, gcCount=2}
+2019-03-20 13:02:41.876+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1229, gcTime=1286, gcCount=2}
+2019-03-20 13:02:56.547+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=350, gcTime=386, gcCount=2}
+2019-03-20 13:03:11.970+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1029, gcTime=1076, gcCount=2}
+2019-03-20 13:03:23.543+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1129, gcTime=1147, gcCount=2}
+2019-03-20 13:03:39.423+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=414, gcTime=437, gcCount=2}
+2019-03-20 13:03:43.840+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=106, gcTime=134, gcCount=1}
+2019-03-20 13:03:55.702+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1088, gcTime=1081, gcCount=2}
+2019-03-20 13:04:07.702+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1038, gcTime=1086, gcCount=2}
+2019-03-20 13:04:19.974+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1367, gcTime=1391, gcCount=2}
+2019-03-20 13:04:34.537+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=885, gcTime=954, gcCount=2}
+2019-03-20 13:04:46.675+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1035, gcTime=1069, gcCount=2}
+2019-03-20 13:04:49.848+0000 INFO [o.n.c.c.c.l.s.Segments] Pruning SegmentFile{file=raft.log.1, header=SegmentHeader{prevFileLastIndex=-1, version=1, prevIndex=0, prevTerm=0}}
+2019-03-20 13:04:49.853+0000 INFO [o.n.c.c.c.l.s.Segments] Pruning SegmentFile{file=raft.log.2, header=SegmentHeader{prevFileLastIndex=2650, version=2, prevIndex=2650, prevTerm=1}}
+2019-03-20 13:04:59.363+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1298, gcTime=1331, gcCount=2}
+2019-03-20 13:05:12.641+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1247, gcTime=1333, gcCount=2}
+2019-03-20 13:05:22.641+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 194 checkpoint started...
+2019-03-20 13:05:27.120+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1319, gcTime=1369, gcCount=2}
+2019-03-20 13:05:31.502+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 195 to [/data/databases/graph.db/neostore.counts.db.a], from [/data/databases/graph.db/neostore.counts.db.b].
+2019-03-20 13:05:40.592+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1095, gcTime=1110, gcCount=2}
+2019-03-20 13:05:51.869+0000 INFO [o.n.k.NeoStoreDataSource] Rotated to transaction log [/var/lib/neo4j/data/databases/graph.db/neostore.transaction.db.7] version=7, last transaction in previous log=197
+2019-03-20 13:05:53.114+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1127, gcTime=1219, gcCount=2}
+2019-03-20 13:06:06.024+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=769, gcTime=863, gcCount=2}
+2019-03-20 13:06:06.851+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 194 checkpoint completed in 44s 210ms
+2019-03-20 13:06:06.920+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Pruned log versions 2-4, last checkpoint was made in version 6
+2019-03-20 13:06:18.964+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1120, gcTime=1158, gcCount=2}
+2019-03-20 13:06:31.235+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1011, gcTime=1030, gcCount=2}
+2019-03-20 13:06:43.608+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=864, gcTime=911, gcCount=2}
+2019-03-20 13:06:56.481+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1021, gcTime=1058, gcCount=2}
+2019-03-20 13:07:09.669+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1062, gcTime=1135, gcCount=2}
+2019-03-20 13:07:21.594+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1159, gcTime=1151, gcCount=2}
+2019-03-20 13:07:35.531+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1171, gcTime=1179, gcCount=2}
+2019-03-20 13:07:47.959+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1041, gcTime=1059, gcCount=2}
+2019-03-20 13:08:00.949+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=830, gcTime=914, gcCount=2}
+2019-03-20 13:08:12.875+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1154, gcTime=1165, gcCount=2}
+2019-03-20 13:08:25.864+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1268, gcTime=1332, gcCount=2}
+2019-03-20 13:08:38.046+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=376, gcTime=429, gcCount=2}
+2019-03-20 13:08:44.325+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=115, gcTime=142, gcCount=1}
+2019-03-20 13:08:46.016+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1317, gcTime=1365, gcCount=2}
+2019-03-20 13:08:56.067+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=604, gcTime=686, gcCount=2}
+2019-03-20 13:09:03.303+0000 INFO [o.n.c.c.s.CommandApplicationProcess] BatchSize{min=1.0, max=1.0, avg=1.0, count=4096}
+2019-03-20 13:09:08.162+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=600, gcTime=643, gcCount=2}
+2019-03-20 13:09:21.404+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=654, gcTime=723, gcCount=2}
+2019-03-20 13:09:32.250+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=596, gcTime=648, gcCount=2}
+2019-03-20 13:09:37.958+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 1224 seconds: CALL apoc.load.json('https://storage.googleapis.com/meetup-data/segments/batch3af' /* 'file:///Users/davidallen/hax/meetup-dataset/meetup.raw' */) 
+yield value 
+with value.venue as venueData,
+value.member as memberData,
+value.event as eventData,
+value.group.group_topics as topics,
+value as data,
+apoc.map.removeKeys(value.group, ['group_topics']) as groupData
+
+MERGE (member:Member { id: memberData.member_id })
+   ON CREATE SET 
+        member.name = memberData.member_name,
+        member.photo = memberData.photo
+
+MERGE (event:Event { id: eventData.event_id })
+   ON CREATE SET 
+        event.name = eventData.event_name,
+        event.time = datetime({ epochMillis: coalesce(eventData.time, 0) }),
+        event.url = eventData.event_url
+
+MERGE (group:Group { id: groupData.group_id })
+   ON CREATE SET 
+        group.name = groupData.group_name,
+        group.city = groupData.group_city,
+        group.country = groupData.group_country,
+        group.state = groupData.group_state,
+        group.location = point({
+            latitude: groupData.group_lat,
+            longitude: groupData.group_lon
+        }),
+        group.urlname = groupData.group_urlname
+
+MERGE (venue:Venue { id: coalesce(venueData.venue_id, randomUUID()) })
+   ON CREATE SET 
+        venue.name = venueData.venue_name,
+        venue.location = point({
+            latitude: venueData.lat,
+            longitude: venueData.lon
+        })
+
+CREATE (rsvp:RSVP {
+    id: coalesce(data.rsvp_id, randomUUID()),
+    guests: coalesce(data.guests, 0),
+    mtime: datetime({ epochMillis: coalesce(data.mtime, 0) }),
+    response: data.response,
+    visibility: data.visibility
+})
+
+CREATE (rsvp)-[:MEMBER]->(member)
+CREATE (rsvp)-[:EVENT]->(event)
+CREATE (rsvp)-[:GROUP]->(group)
+
+MERGE (member)-[:RSVP]->(event)
+MERGE (event)<-[:HELD]-(group)
+MERGE (event)-[:LOCATED_AT]->(venue)
+
+WITH  group, topics
+UNWIND topics as tp
+
+MERGE (t:Topic { urlkey: tp.urlkey })
+   ON CREATE SET t.name = tp.topic_name
+
+MERGE (group)-[:TOPIC]->(t);
+2019-03-20 13:09:45.892+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=925, gcTime=966, gcCount=2}
+2019-03-20 13:09:57.760+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=741, gcTime=828, gcCount=2}
+2019-03-20 13:10:09.273+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=661, gcTime=754, gcCount=2}
+2019-03-20 13:10:22.604+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=881, gcTime=962, gcCount=2}
+2019-03-20 13:10:23.077+0000 INFO [o.n.k.NeoStoreDataSource] Rotated to transaction log [/var/lib/neo4j/data/databases/graph.db/neostore.transaction.db.8] version=8, last transaction in previous log=219
+2019-03-20 13:10:36.450+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1346, gcTime=1395, gcCount=2}
+2019-03-20 13:10:47.835+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=904, gcTime=967, gcCount=2}
+2019-03-20 13:11:01.592+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1326, gcTime=1330, gcCount=2}
+2019-03-20 13:11:12.752+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=922, gcTime=996, gcCount=2}
+2019-03-20 13:11:24.354+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=733, gcTime=797, gcCount=2}
+2019-03-20 13:11:37.066+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1318, gcTime=1396, gcCount=2}
+2019-03-20 13:11:49.269+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1264, gcTime=1296, gcCount=2}
+2019-03-20 13:12:01.124+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=953, gcTime=1045, gcCount=2}
+2019-03-20 13:12:11.944+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=865, gcTime=911, gcCount=2}
+2019-03-20 13:12:23.397+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=840, gcTime=919, gcCount=2}
+2019-03-20 13:12:35.246+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1009, gcTime=1030, gcCount=2}
+2019-03-20 13:12:45.908+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=613, gcTime=692, gcCount=2}
+2019-03-20 13:12:57.530+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1017, gcTime=1061, gcCount=2}
+2019-03-20 13:13:09.515+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1116, gcTime=1206, gcCount=2}
+2019-03-20 13:13:21.834+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=966, gcTime=1054, gcCount=2}
+2019-03-20 13:13:33.266+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1037, gcTime=1128, gcCount=2}
+2019-03-20 13:13:44.230+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=778, gcTime=838, gcCount=2}
+2019-03-20 13:13:56.119+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1166, gcTime=1255, gcCount=2}
+2019-03-20 13:14:08.375+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1122, gcTime=1143, gcCount=2}
+2019-03-20 13:14:19.976+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=987, gcTime=1047, gcCount=2}
+2019-03-20 13:14:32.265+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1037, gcTime=1127, gcCount=2}
+2019-03-20 13:14:43.050+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=995, gcTime=1005, gcCount=2}
+2019-03-20 13:14:43.208+0000 INFO [o.n.k.NeoStoreDataSource] Rotated to transaction log [/var/lib/neo4j/data/databases/graph.db/neostore.transaction.db.9] version=9, last transaction in previous log=241
+2019-03-20 13:14:49.859+0000 INFO [o.n.c.c.c.l.s.Segments] Pruning SegmentFile{file=raft.log.3, header=SegmentHeader{prevFileLastIndex=4938, version=3, prevIndex=4938, prevTerm=1}}
+2019-03-20 13:14:49.867+0000 INFO [o.n.c.c.c.l.s.Segments] Pruning SegmentFile{file=raft.log.4, header=SegmentHeader{prevFileLastIndex=7128, version=4, prevIndex=7128, prevTerm=1}}
+2019-03-20 13:14:49.872+0000 INFO [o.n.c.c.c.l.s.Segments] Pruning SegmentFile{file=raft.log.5, header=SegmentHeader{prevFileLastIndex=9209, version=5, prevIndex=9209, prevTerm=1}}
+2019-03-20 13:14:54.933+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1009, gcTime=1023, gcCount=2}
+2019-03-20 13:15:06.830+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=917, gcTime=941, gcCount=2}
+2019-03-20 13:15:16.918+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=688, gcTime=723, gcCount=2}
+2019-03-20 13:15:29.523+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=914, gcTime=992, gcCount=2}
+2019-03-20 13:15:41.232+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1187, gcTime=1194, gcCount=2}
+2019-03-20 13:15:51.798+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=688, gcTime=691, gcCount=2}
+2019-03-20 13:16:02.805+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=676, gcTime=699, gcCount=2}
+2019-03-20 13:16:16.792+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1077, gcTime=1100, gcCount=2}
+2019-03-20 13:16:28.877+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1038, gcTime=1090, gcCount=2}
+2019-03-20 13:16:40.511+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1151, gcTime=1210, gcCount=2}
+2019-03-20 13:16:53.353+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1213, gcTime=1252, gcCount=2}
+2019-03-20 13:17:06.478+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1246, gcTime=1315, gcCount=2}
+2019-03-20 13:17:19.420+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1083, gcTime=1148, gcCount=2}
+2019-03-20 13:17:32.034+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1057, gcTime=1064, gcCount=2}
+2019-03-20 13:17:44.272+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=755, gcTime=777, gcCount=2}
+2019-03-20 13:17:56.570+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=838, gcTime=878, gcCount=2}
+2019-03-20 13:18:03.668+0000 INFO [o.n.c.c.s.CommandApplicationProcess] BatchSize{min=1.0, max=1.0, avg=1.0, count=4096}
+2019-03-20 13:18:08.551+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=755, gcTime=770, gcCount=2}
+2019-03-20 13:18:19.604+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=560, gcTime=622, gcCount=2}
+2019-03-20 13:18:31.441+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=582, gcTime=661, gcCount=2}
+2019-03-20 13:18:42.945+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=612, gcTime=639, gcCount=2}
+2019-03-20 13:18:57.141+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=612, gcTime=697, gcCount=2}
+2019-03-20 13:18:59.363+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=106, gcTime=111, gcCount=1}
+2019-03-20 13:19:07.933+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=569, gcTime=582, gcCount=2}
+2019-03-20 13:19:11.723+0000 INFO [o.n.k.NeoStoreDataSource] Rotated to transaction log [/var/lib/neo4j/data/databases/graph.db/neostore.transaction.db.10] version=10, last transaction in previous log=263
+2019-03-20 13:19:22.053+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=622, gcTime=669, gcCount=2}
+2019-03-20 13:19:32.036+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=621, gcTime=633, gcCount=2}
+2019-03-20 13:19:44.839+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=597, gcTime=674, gcCount=2}
+2019-03-20 13:19:59.003+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=974, gcTime=1039, gcCount=2}
+2019-03-20 13:20:11.057+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=662, gcTime=703, gcCount=2}
+2019-03-20 13:20:22.705+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=584, gcTime=664, gcCount=2}
+2019-03-20 13:20:34.928+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=667, gcTime=672, gcCount=2}
+2019-03-20 13:20:46.646+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=597, gcTime=689, gcCount=2}
+2019-03-20 13:20:59.938+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=595, gcTime=606, gcCount=2}
+2019-03-20 13:21:11.072+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 272 checkpoint started...
+2019-03-20 13:21:12.506+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=588, gcTime=642, gcCount=2}
+2019-03-20 13:21:15.216+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=104, gcTime=136, gcCount=1}
+2019-03-20 13:21:25.334+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=591, gcTime=638, gcCount=2}
+2019-03-20 13:21:32.431+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 274 to [/data/databases/graph.db/neostore.counts.db.b], from [/data/databases/graph.db/neostore.counts.db.a].
+2019-03-20 13:21:38.850+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=527, gcTime=600, gcCount=2}
+2019-03-20 13:21:51.029+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=545, gcTime=586, gcCount=2}
+2019-03-20 13:22:03.142+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=593, gcTime=631, gcCount=2}
+2019-03-20 13:22:13.822+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=506, gcTime=552, gcCount=2}
+2019-03-20 13:22:30.098+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=800, gcTime=857, gcCount=2}
+2019-03-20 13:22:42.747+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1174, gcTime=1227, gcCount=2}
+2019-03-20 13:22:54.260+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1000, gcTime=1068, gcCount=2}
+2019-03-20 13:23:07.373+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1357, gcTime=1361, gcCount=2}
+2019-03-20 13:23:18.825+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1233, gcTime=1240, gcCount=2}
+2019-03-20 13:23:30.708+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1346, gcTime=1374, gcCount=2}
+2019-03-20 13:23:31.342+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 272 checkpoint completed in 2m 20s 269ms
+2019-03-20 13:23:31.399+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Pruned log versions 5-8, last checkpoint was made in version 10
+2019-03-20 13:23:40.938+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1035, gcTime=1123, gcCount=2}
+2019-03-20 13:23:41.041+0000 INFO [o.n.k.NeoStoreDataSource] Rotated to transaction log [/var/lib/neo4j/data/databases/graph.db/neostore.transaction.db.11] version=11, last transaction in previous log=285
+2019-03-20 13:23:51.873+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=930, gcTime=1017, gcCount=2}
+2019-03-20 13:24:02.426+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=661, gcTime=740, gcCount=2}
+2019-03-20 13:24:14.026+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1132, gcTime=1172, gcCount=2}
+2019-03-20 13:24:15.301+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=134, gcTime=139, gcCount=1}
+2019-03-20 13:24:26.260+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=737, gcTime=760, gcCount=2}
