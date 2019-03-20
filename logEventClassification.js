@@ -71,7 +71,7 @@ module.exports = {
                 advertised: m[1],
             };
         } else {
-            console.error('Failed match on ', t);
+            // console.error('Failed match on ', t);
         }
 
         return e;
