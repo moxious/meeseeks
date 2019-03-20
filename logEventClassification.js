@@ -132,4 +132,34 @@ module.exports = {
 
         return e;
     }),
+
+    core: e => onlyWhen(e, {
+        classDesignator: 'o.n.c.d.CoreMonitor',
+    }, e => {
+        e.eventType = 'CORE';
+        return e;
+    }),
+
+    checkpoint: e => onlyWhen(e, {
+        classDesignator: 'o.n.k.i.t.l.c.CheckPointerImpl',
+        text: new RegExp('Checkpoint triggered'),
+    }, e => {
+        e.eventType = 'CHECKPOINT';
+        return e;
+    }),
+
+    health: e => onlyWhen(e, {
+        classDesignator: 'o.n.k.i.DatabaseHealth',
+        text: new RegExp('Database health set'),
+    }, e => {
+        e.eventType = 'HEALTH';
+        return e;
+    }),
+
+    procedure: e => onlyWhen(e, {
+        classDesignator: 'o.n.k.i.p.Procedures',
+    }, e => {
+        e.eventType = 'PROCEDURE';
+        return e;
+    }),
 };
