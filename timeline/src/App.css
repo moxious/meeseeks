@@ -19,8 +19,11 @@
   color: white;
 }
 
-div.vis-content {
-  top: 0px !important;
+div.vis-timeline {
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border: 1px solid black;
 }
 
 div.vis-item.INFO {
@@ -35,7 +38,6 @@ div.vis-item.WARN {
   padding-top: 1px;
   padding-bottom: 1px;
   font-size: 0.7em;
-
 }
 
 div.vis-item.ERROR {

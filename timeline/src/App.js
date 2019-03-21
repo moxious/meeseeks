@@ -4,6 +4,9 @@ import data from './parsed.json';
 import _ from 'lodash';
 import moment from 'moment';
 import './App.css';
+import LogEventFilter from './LogEventFilter';
+import EventDetail from './EventDetail';
+import { Modal, Button, Icon } from 'semantic-ui-react';
 
 // Assign IDs
 data.forEach((i, idx) => {
@@ -37,86 +40,62 @@ const labelAddress = addr => {
   return addr;
 };
 
-const assignClass = e => {
-  return e.logLevel;
-};
-
-const generateContent = e => {
-  const t = e.eventType;
-
-  return t;
-};
-
 class App extends Component {
   state = {
     eventLimit: 300,
     selected: null,
+    detailOpen: false,
+    timelineSelection: data.slice(0, 200),
   };
 
-  componentWillMount() {
-    this.palette = [
-      'one', 'two', 'three', 'four', 'five',
-    ];
+  chooseItem = idx => {
+    const selected = data[idx] || data[0];
+    this.setState({ selected });
+  };
 
-    this.buildFilters();
-  }
-
-  assignColor(i) {
-    if (!this.legend) {
-      this.legend = {};
-    }
-
-    var bolt = i.member.raft;
-    if (this.legend[bolt]) {
-      i.className = this.legend[bolt];
-      return i;
-    }
-
-    i.className = this.palette.pop();
-    this.legend[bolt] = i.className;
-    return i;
-  }
-
-  buildFilters() {
-    const members = _.uniq(data.map(i => _.get(i, 'member.raft')).filter(x => x)).sort();
-    const logLevels = _.uniq(data.map(i => i.logLevel).filter(x => x)).sort();
-    const eventTypes = _.uniq(data.map(i => i.eventType).filter(x => x)).sort();
-    const designators = _.uniq(data.map(i => i.classDesignator).filter(x => x)).sort();
-
-    const filters = {
-      members, logLevels, eventTypes, designators,
-    };
-
-    console.log('Filters', filters);
-    this.setState({ filters });
-  }
+  closeDetail = () => this.setState({ detailOpen: false });
 
   getGroups() {
     const allBolt = _.uniq(data.map(d => _.get(d.member, 'raft')).filter(x => x)).sort();
 
-    return allBolt.map((boltAddr, idx) => ({ 
-      id: labelAddress(boltAddr), 
-      content: labelAddress(boltAddr), 
+    return allBolt.map((boltAddr, idx) => ({
+      id: labelAddress(boltAddr),
+      content: labelAddress(boltAddr),
     }));
   }
+
+  filterHandler = (filter, filteredSet) => {
+    console.log('Got filtered set', filteredSet);
+    this.setState({ timelineSelection: filteredSet });
+  };
 
   clickHandler = (e) => {
     console.log('Click', e);
     const idx = e.item;
     const fullItem = data[idx];
-    console.log(fullItem);
 
-    this.setState({
-      selected: fullItem,
-    });
+    if (fullItem) {
+      console.log(fullItem);
+      this.setState({
+        selected: fullItem,
+        detailOpen: true,
+      });
+    }
   };
 
+  // Transforms timeline selection into a set of items for the timeline.
   getItems() {
-    // return [{
-    //   start: new Date(2010, 7, 15),
-    //   end: new Date(2010, 8, 2),  // end is optional
-    //   content: 'Trajectory A',
-    // }];
+    const selected = this.state.timelineSelection;
+
+    return selected.map(e => ({
+      id: e.id,
+      start: moment.utc(e.timestamp).toDate(),
+      content: e.eventType,
+      group: labelAddress(_.get(e.member, 'raft')),
+      editable: false,
+      className: e.logLevel,
+    }));
+    /*
     const finished = data
       .filter(d => (
         // d.eventType !== 'unknown' &&
@@ -129,23 +108,24 @@ class App extends Component {
           id: e.id,
           start: moment.utc(e.timestamp).toDate(),
           // end: moment.utc(e.timestamp).add(10, 'seconds').toDate(),
-          content: generateContent(e),
+          content: e.eventType,
           group: labelAddress(_.get(e.member, 'raft')),
           editable: false,
-          className: assignClass(e),
+          className: e.logLevel,
         };
         return item;
       });
 
     console.log(finished);
     return finished;
+    */
   }
 
   legend() {
     return (
-      <div style={{textAlign: 'left'}}>
-        Selected: 
-        <pre>{ this.state.selected ? JSON.stringify(this.state.selected, null, 2) : '' }</pre>
+      <div style={{ textAlign: 'left' }}>
+        Selected:
+        <pre>{this.state.selected ? JSON.stringify(this.state.selected, null, 2) : ''}</pre>
       </div>
     );
   }
@@ -153,11 +133,11 @@ class App extends Component {
   timeline() {
     return (
       // <div style={{paddingTop: '200px'}}>
-        <Timeline 
-            options={options} 
-            clickHandler={this.clickHandler}
-            groups={this.getGroups()} 
-            items={this.getItems()}/>
+      <Timeline
+        options={options}
+        clickHandler={this.clickHandler}
+        groups={this.getGroups()}
+        items={this.getItems()} />
       // </div>
     );
   }
@@ -165,7 +145,24 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        { this.timeline() }
+        <LogEventFilter onChange={this.filterHandler} data={data} />
+
+        {this.timeline()}
+
+        <Modal closeIcon centered={false} onClose={this.closeDetail} open={this.state.detailOpen}>
+          <Modal.Content>
+            <EventDetail item={this.state.selected} />
+          </Modal.Content>
+          <Modal.Actions>
+            <Button color='green' onClick={() => this.chooseItem(this.state.selected.id - 1)}>
+              <Icon name='fast backward' /> Previous
+            </Button>
+            <Button color='green' onClick={() => this.chooseItem(this.state.selected.id + 1)}>
+              <Icon name='fast forward' /> Next
+            </Button>
+          </Modal.Actions>
+        </Modal>
+
         {/* { this.legend() } */}
       </div>
     );
