@@ -11,13 +11,15 @@ A quick tool for extracting useful stuff out of multiple debug.log files from Ne
 ```
 yarn install
 
-# For the moment it must be called parsed.json
-node index.js logs/gke-onprem-healthy-4gb-json-load/ > parsed.json
+# For the moment it must be this path for the webapp to find it
+node index.js logs/gke-onprem-healthy-4gb-json-load/ > timeline/src/parsed.json
 
 # Start local web server to serve visualization content
-python -m SimpleHTTPServer 8000
+cd timeline
+yarn install
+yarn start
 
-(Browse to http://localhost:8000/timeline.html)
+(Yarn start should open your browser for you.)
 ```
 
 # WTF does this do right now?
